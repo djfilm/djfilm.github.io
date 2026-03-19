@@ -1,0 +1,86 @@
+# =============================================================================
+# _config.yml — Configuration Jekyll — DJfilm
+# =============================================================================
+
+# --- Identité du site ---
+title:          "DJfilm — Vidéaste Professionnel à Agen"
+description:    "DJfilm, vidéaste professionnel à Agen (47). Films de mariage, événements d'entreprise, publicités et séminaires en Lot-et-Garonne et Nouvelle-Aquitaine."
+url:            "https://djfilm.fr"
+baseurl:        ""
+lang:           "fr"
+locale:         "fr_FR"
+
+# --- Auteur ---
+author:
+  name:         "DJfilm"
+  email:        "contact@djfilm.fr"
+  location:     "Agen, 47000, France"
+
+# --- Plugins compatibles GitHub Pages ---
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# --- Build ---
+markdown:       kramdown
+highlighter:    rouge
+permalink:      pretty
+timezone:       Europe/Paris
+
+kramdown:
+  input:        GFM
+  hard_wrap:    false
+
+# --- Fichiers à exclure du build ---
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .git/
+  - "*.sh"
+  - "*.md"
+  - "!README.md"
+
+# --- Répertoires additionnels ---
+include:
+  - _pages
+  - robots.txt
+  - manifest.json
+
+# --- Defaults de front matter ---
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+    values:
+      image: "/assets/images/og-default.jpg"
+
+# --- SEO (jekyll-seo-tag) ---
+twitter:
+  username:     djfilm_agen
+  card:         summary_large_image
+
+social:
+  name:         DJfilm
+  links:
+    - https://instagram.com/djfilm_agen
+    - https://vimeo.com/djfilm
+    - https://www.linkedin.com/company/djfilm-agen
+    - https://youtube.com/@djfilm
+
+# --- Google Analytics (remplacer l'ID) ---
+google_analytics: ""
+
+# --- Sitemap ---
+sitemap:
+  exclude:
+    - "/mentions-legales/"
+    - "/politique-de-confidentialite/"
+    - "/404.html"

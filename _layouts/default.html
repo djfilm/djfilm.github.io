@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'fr' }}" dir="ltr">
+<head>
+  {% include head.html %}
+  {% include seo-meta.html %}
+  {% include schema.html %}
+</head>
+<body class="{% if page.body_class %}{{ page.body_class }}{% endif %}" data-page="{{ page.page_id | default: '' }}">
+
+  {% include header.html %}
+
+  <main id="main-content" tabindex="-1">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+</body>
+</html>

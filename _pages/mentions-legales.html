@@ -1,0 +1,34 @@
+---
+layout: page
+page_id: legal
+permalink: /mentions-legales/
+seo_title: "Mentions Légales | DJfilm Agen"
+seo_description: "Mentions légales du site DJfilm.fr — vidéaste professionnel à Agen, Lot-et-Garonne."
+noindex: true
+breadcrumbs:
+  - name: "Mentions légales"
+    url: "/mentions-legales/"
+---
+
+{% assign d = site.data.legal.mentions_legales %}
+
+{% include components/page-hero.html label="Informations légales" title="Mentions légales" subtitle="Informations légales relatives au site djfilm.fr" %}
+
+<section class="section-legal section" aria-labelledby="legal-title">
+  <div class="container">
+    <div class="legal-content">
+
+      <h2 class="sr-only" id="legal-title">Mentions légales</h2>
+
+      {% for section in d.sections %}
+      <div class="legal-section" id="{{ section.id }}">
+        <h2>{{ section.title }}</h2>
+        <div class="prose">
+          {{ section.content | markdownify }}
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
