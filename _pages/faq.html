@@ -42,11 +42,11 @@ breadcrumbs:
         {% if cat_questions.size > 0 %}
         <div class="faq-group" data-category="{{ cat.id }}">
           <h3 class="faq-group-title">{{ cat.label }}</h3>
-          <dl class="faq-items">
+          <div class="faq-items">
             {% for item in cat_questions %}
             {% include components/faq-item.html item=item %}
             {% endfor %}
-          </dl>
+          </div>
         </div>
         {% endif %}
         {% endfor %}
