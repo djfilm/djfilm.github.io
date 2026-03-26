@@ -673,8 +673,8 @@ main a:not([class]):hover {
 
 .intro-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: clamp(var(--space-12), 8vw, var(--space-24));
+  grid-template-columns: 5fr 7fr;
+  gap: clamp(var(--space-8), 5vw, var(--space-16));
   align-items: center;
 }
 
@@ -700,6 +700,12 @@ main a:not([class]):hover {
 video.intro-image {
   aspect-ratio: 16/9;
 }
+video.intro-image::-webkit-media-controls,
+video.intro-image::-webkit-media-controls-enclosure,
+video.intro-image::-webkit-media-controls-overlay-play-button {
+  display: none !important;
+}
+video.intro-image::-internal-media-controls-button-panel { display: none !important; }
 .intro-image-frame {
   position: absolute;
   inset: -var(--space-4);
