@@ -40,8 +40,15 @@
         "Présentation du montage et retouches",
         "Livraison des fichiers définitifs"
       ],
-      "thumbnail": "/assets/images/services/mariage.webp",
+      "thumbnail": "/assets/images/services/mariage/mariage_1.webp",
       "thumbnail_alt": "Film de mariage cinématographique par DJfilm Agen",
+      "images": [
+        "/assets/images/services/mariage/mariage_1.webp",
+        "/assets/images/services/mariage/mariage_2.webp",
+        "/assets/images/services/mariage/mariage_3.webp",
+        "/assets/images/services/mariage/mariage_4.webp",
+        "/assets/images/services/mariage/mariage_5.webp"
+      ],
       "cta": {
         "label": "Réserver ma date",
         "url": "/contact/?service=mariage"
@@ -108,8 +115,15 @@
         "Montage express ou standard selon besoin",
         "Livraison des fichiers"
       ],
-      "thumbnail": "/assets/images/services/service-evenement.jpg",
+      "thumbnail": "/assets/images/services/evenement/evenements_1.webp",
       "thumbnail_alt": "Captation d'événement professionnel par DJfilm Agen",
+      "images": [
+        "/assets/images/services/evenement/evenements_1.webp",
+        "/assets/images/services/evenement/evenements_2.webp",
+        "/assets/images/services/evenement/evenements_3.webp",
+        "/assets/images/services/evenement/evenements_4.webp",
+        "/assets/images/services/evenement/evenements_5.webp"
+      ],
       "cta": {
         "label": "Discuter de votre événement",
         "url": "/contact/?service=evenement"
@@ -143,8 +157,16 @@
         "Revues et ajustements",
         "Livraison multi-formats"
       ],
-      "thumbnail": "/assets/images/services/service-publicite.jpg",
+      "thumbnail": "/assets/images/services/pub/pub_1.webp",
       "thumbnail_alt": "Production publicitaire et contenu vidéo par DJfilm Agen",
+      "images": [
+        "/assets/images/services/pub/pub_1.webp",
+        "/assets/images/services/pub/pub_2.webp",
+        "/assets/images/services/pub/pub_3.webp",
+        "/assets/images/services/pub/pub_4.webp",
+        "/assets/images/services/pub/pub_5.webp",
+        "/assets/images/services/pub/pub_6.webp"
+      ],
       "cta": {
         "label": "Lancer un projet pub",
         "url": "/contact/?service=publicite"
