@@ -63,14 +63,14 @@
       "tagline": "Votre identité, filmée avec précision",
       "description": "Un film d'entreprise bien réalisé est l'un des outils de communication les plus puissants. Il humanise votre marque, inspire confiance et génère de l'engagement. Je travaille avec vous pour créer un contenu qui reflète fidèlement vos valeurs et vos ambitions.",
       "features": [
-        "Film institutionnel (2 à 5 min)",
-        "Témoignages clients et collaborateurs",
+                "Brief & définition des objectifs",
+        "Pré-production & repérage",
+
+        "Film institutionnel",
+        "Témoignages",
         "Présentation de produits ou de services",
-        "Interviews dirigeants et équipes",
-        "Motion design & infographies (option)",
-        "Déclinaisons réseaux sociaux",
-        "Voix off professionnelle (option)",
-        "Sous-titrage (option)"
+        "Interviews",
+        "Voix off professionnelle (option)"
       ],
       "process": [
         "Brief & définition des objectifs",
@@ -104,18 +104,22 @@
       "icon": "camera",
       "number": "03",
       "title": "Captation d'Événement",
-      "subtitle": "Conférences · Galas · Concerts",
-      "tagline": "L'énergie du direct, la qualité du cinéma",
-      "description": "Conférences professionnelles, galas, concerts, remises de prix — je capture l'énergie et les moments clés de vos événements avec réactivité et précision. Le résultat : un film qui prolonge la vie de votre événement bien au-delà du jour J.",
+      "subtitle": "Conférences · Galas · Séminaires",
+      "tagline": "Une autre manière de raconter",
+      "description": "Conférences professionnelles, galas, séminaires, remises de prix — je capture l'énergie et les moments clés de vos événements.",
       "features": [
-        "Multi-caméras (jusqu'à 3 caméras)",
-        "Captation du discours et des temps forts",
-        "Interviews à chaud des participants",
-        "Film de synthèse (2 à 6 min)",
-        "Teaser réseaux sociaux livré rapidement",
-        "Prestation en soirée possible",
-        "Diffusion live (option)"
-      ],
+
+                      "Rencontre préparatoire",
+
+                "Repérage du lieu",
+
+        "Multi-caméras",
+        "Captation des temps forts",
+        "Interviews",
+        "Film de l'événement",
+        "Prestation en soirée possible"
+      
+    ],
       "process": [
         "Échange sur le programme et les moments clés",
         "Repérage du lieu",
