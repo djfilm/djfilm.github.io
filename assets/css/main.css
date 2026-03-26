@@ -394,9 +394,9 @@ main a:not([class]):hover {
 .nav-link.is-active::after { transform: scaleX(1); }
 .nav-link.is-active { color: var(--c-text); }
 
-/* Navbar blanche au-dessus du hero (non scrollée) */
-.site-header:not(.is-scrolled) .nav-link { color: #FFFFFF; }
-.site-header:not(.is-scrolled) .nav-link.is-active { color: #FFFFFF; }
+/* Navbar noire au-dessus du hero (non scrollée) */
+.site-header:not(.is-scrolled) .nav-link { color: #1C1C1E; }
+.site-header:not(.is-scrolled) .nav-link.is-active { color: #1C1C1E; }
 .site-header:not(.is-scrolled) .nav-link:hover { color: var(--c-gold); }
 
 /* Nav CTA */
