@@ -673,8 +673,8 @@ main a:not([class]):hover {
 
 .intro-grid {
   display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: clamp(var(--space-8), 5vw, var(--space-16));
+  grid-template-columns: 2fr 3fr;
+  gap: clamp(var(--space-8), 4vw, var(--space-12));
   align-items: center;
 }
 
@@ -689,6 +689,8 @@ main a:not([class]):hover {
 
 .intro-image-wrap {
   position: relative;
+  margin-right: calc(-1 * var(--container-pad));
+  overflow: hidden;
 }
 .intro-image {
   width: 100%;
@@ -698,7 +700,8 @@ main a:not([class]):hover {
   display: block;
 }
 video.intro-image {
-  aspect-ratio: 16/9;
+  aspect-ratio: 2.4/1;
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 video.intro-image::-webkit-media-controls,
 video.intro-image::-webkit-media-controls-enclosure,
