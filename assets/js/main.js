@@ -240,4 +240,52 @@
     });
   });
 
+
+  /* =====================================================================
+     10. MODALE VIDÉO — portfolio
+     ===================================================================== */
+  var videoModal    = document.getElementById('video-modal');
+  var videoPlayer   = document.getElementById('video-modal-player');
+  var modalClose    = document.getElementById('video-modal-close');
+  var modalBackdrop = document.getElementById('video-modal-backdrop');
+
+  if (videoModal && videoPlayer) {
+
+    function openVideoModal(src, type) {
+      if (type === 'local') {
+        videoPlayer.src = src;
+        videoPlayer.style.display = 'block';
+      }
+      videoModal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      if (modalClose) modalClose.focus();
+      if (type === 'local') videoPlayer.play();
+    }
+
+    function closeVideoModal() {
+      videoModal.hidden = true;
+      document.body.style.overflow = '';
+      if (videoPlayer) {
+        videoPlayer.pause();
+        videoPlayer.src = '';
+      }
+    }
+
+    // Déclencheurs
+    document.querySelectorAll('[data-video-open]').forEach(function (trigger) {
+      trigger.addEventListener('click', function () {
+        var src  = trigger.dataset.videoSrc;
+        var type = trigger.dataset.videoType || 'local';
+        openVideoModal(src, type);
+      });
+    });
+
+    // Fermeture
+    if (modalClose)    modalClose.addEventListener('click', closeVideoModal);
+    if (modalBackdrop) modalBackdrop.addEventListener('click', closeVideoModal);
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !videoModal.hidden) closeVideoModal();
+    });
+  }
+
 })();

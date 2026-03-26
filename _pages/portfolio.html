@@ -50,6 +50,21 @@ breadcrumbs:
   </div>
 </section>
 
+<!-- Modale vidéo -->
+<div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" hidden>
+  <div class="video-modal__backdrop" id="video-modal-backdrop"></div>
+  <div class="video-modal__inner">
+    <button class="video-modal__close" id="video-modal-close" type="button" aria-label="Fermer la vidéo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="video-modal__player">
+      <video class="video-modal__video" id="video-modal-player" controls preload="metadata">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+    </div>
+  </div>
+</div>
+
 <!-- CTA -->
 {% assign cta_data = d.cta %}
 {% assign cta_banner = "" | split: "" %}

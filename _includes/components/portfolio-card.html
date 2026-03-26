@@ -9,8 +9,20 @@
   data-category="{{ p.category }}"
   aria-label="{{ p.title }} — {{ p.category_label }}"
 >
+  {% if p.video_type == "local" or p.video_type == "youtube" %}
+  <button
+    class="portfolio-card__link portfolio-card__link--btn"
+    data-video-open="{{ p.id }}"
+    data-video-src="{{ p.video_url }}"
+    data-video-type="{{ p.video_type }}"
+    aria-label="Lire la vidéo : {{ p.title }}"
+    type="button"
+  >
+  {% else %}
   <a href="{{ p.video_url }}" class="portfolio-card__link" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-hidden="true">
+  {% endif %}
     <div class="portfolio-card__media">
+      {% if p.thumbnail != "" and p.thumbnail %}
       <img
         src="{{ p.thumbnail | relative_url }}"
         alt="{{ p.thumbnail_alt }}"
@@ -20,6 +32,9 @@
         width="600"
         height="400"
       >
+      {% else %}
+      <div class="portfolio-card__placeholder" aria-hidden="true"></div>
+      {% endif %}
       <div class="portfolio-card__overlay" aria-hidden="true">
         <span class="portfolio-card__play">
           <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"/></svg>
@@ -29,7 +44,12 @@
         {% endif %}
       </div>
     </div>
+  {% if p.video_type == "local" or p.video_type == "youtube" %}
+  </button>
+  {% else %}
   </a>
+  {% endif %}
+
   <div class="portfolio-card__body">
     <div class="portfolio-card__meta">
       <span class="portfolio-card__category">{{ p.category_label }}</span>
@@ -38,7 +58,17 @@
       {% endif %}
     </div>
     <h3 class="portfolio-card__title">
+      {% if p.video_type == "local" or p.video_type == "youtube" %}
+      <button
+        class="portfolio-card__title-btn"
+        data-video-open="{{ p.id }}"
+        data-video-src="{{ p.video_url }}"
+        data-video-type="{{ p.video_type }}"
+        type="button"
+      >{{ p.title }}</button>
+      {% else %}
       <a href="{{ p.video_url }}" target="_blank" rel="noopener noreferrer">{{ p.title }}</a>
+      {% endif %}
     </h3>
     {% if p.location %}
     <p class="portfolio-card__location">
