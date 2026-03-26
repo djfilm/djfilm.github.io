@@ -300,6 +300,36 @@
     var generatedCounts = {};
     var keyframeRules = [];
 
+    // Passe 1 : collecter les comptes uniques et préparer les keyframes
+    carousels.forEach(function (carousel) {
+      var count = carousel.querySelectorAll('.service-carousel__slide').length;
+      if (count < 2 || generatedCounts[count]) return;
+
+      var total = count * SLIDE_DURATION;
+      var p1 = (FADE_DURATION / total * 100).toFixed(2);
+      var p2 = (SLIDE_DURATION / total * 100).toFixed(2);
+      var p3 = ((SLIDE_DURATION + FADE_DURATION) / total * 100).toFixed(2);
+
+      keyframeRules.push(
+        '@keyframes carousel-fade-' + count + ' {' +
+        '  0%       { opacity: 0; }' +
+        '  ' + p1 + '% { opacity: 1; }' +
+        '  ' + p2 + '% { opacity: 1; }' +
+        '  ' + p3 + '% { opacity: 0; }' +
+        '  100%     { opacity: 0; }' +
+        '}'
+      );
+      generatedCounts[count] = true;
+    });
+
+    // Injecter les keyframes EN PREMIER, avant toute assignation d'animation
+    if (keyframeRules.length) {
+      var styleEl = document.createElement('style');
+      styleEl.textContent = keyframeRules.join('\n');
+      document.head.appendChild(styleEl);
+    }
+
+    // Passe 2 : assigner l'animation complète (shorthand) sur chaque slide
     carousels.forEach(function (carousel) {
       var slides = carousel.querySelectorAll('.service-carousel__slide');
       var count  = slides.length;
@@ -308,34 +338,10 @@
       var total = count * SLIDE_DURATION;
       var name  = 'carousel-fade-' + count;
 
-      if (!generatedCounts[count]) {
-        var p1 = (FADE_DURATION / total * 100).toFixed(2);
-        var p2 = (SLIDE_DURATION / total * 100).toFixed(2);
-        var p3 = ((SLIDE_DURATION + FADE_DURATION) / total * 100).toFixed(2);
-        keyframeRules.push(
-          '@keyframes ' + name + ' {' +
-          '  0%      { opacity: 0; }' +
-          '  ' + p1 + '% { opacity: 1; }' +
-          '  ' + p2 + '% { opacity: 1; }' +
-          '  ' + p3 + '% { opacity: 0; }' +
-          '  100%    { opacity: 0; }' +
-          '}'
-        );
-        generatedCounts[count] = true;
-      }
-
       slides.forEach(function (slide, i) {
-        slide.style.animationName     = name;
-        slide.style.animationDuration = total + 's';
-        slide.style.animationDelay    = (i * SLIDE_DURATION) + 's';
+        slide.style.animation = name + ' ' + total + 's ease-in-out ' + (i * SLIDE_DURATION) + 's infinite';
       });
     });
-
-    if (keyframeRules.length) {
-      var style = document.createElement('style');
-      style.textContent = keyframeRules.join('\n');
-      document.head.appendChild(style);
-    }
   }
 
 })();
