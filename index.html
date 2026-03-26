@@ -20,15 +20,16 @@ keywords:
      ============================================================ -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__bg" aria-hidden="true">
-    <img
-      src="{{ d.hero.background_image | relative_url }}"
-      alt=""
-      class="hero__bg-img"
-      loading="eager"
-      fetchpriority="high"
-      width="1920"
-      height="1080"
+    <video
+      class="hero__bg-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
     >
+      <source src="/assets/videos/Accueil%201.mp4" type="video/mp4">
+    </video>
     <div class="hero__bg-overlay"></div>
     <div class="hero__grain"></div>
   </div>

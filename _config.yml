@@ -23,10 +23,10 @@ og_image: "/assets/images/og-default.jpg"
 # ------------------------------ 3) Auteur ------------------------------------
 author:
   name:           "DJfilm"
-  prenom_nom:     "Djibril Diallo"
+  prenom_nom:     "Damien JOYEUX"
   enterprise:     "DJfilm"
   job_title:      "Vidéaste professionnel"
-  email:          "contact@djfilm.fr"
+  email:          "djfilm@outlook.fr"
   location:       "Agen, 47000, France"
   address_city:   "Agen"
   address_postal: "47000"
@@ -35,12 +35,12 @@ author:
   url:            "https://djfilm.fr"
   instagram:      "https://instagram.com/djfilm_agen"
   vimeo:          "https://vimeo.com/djfilm"
-  linkedin:       "https://www.linkedin.com/company/djfilm-agen"
+  linkedin:       "https://www.linkedin.com/in/damien-joyeux/"
   youtube:        "https://youtube.com/@djfilm"
   sameAs:
     - "https://instagram.com/djfilm_agen"
     - "https://vimeo.com/djfilm"
-    - "https://www.linkedin.com/company/djfilm-agen"
+    - "https://www.linkedin.com/in/damien-joyeux/"
     - "https://youtube.com/@djfilm"
 
 # ------------------------------ 4) Plugins compatibles GitHub Pages -----------
@@ -58,7 +58,7 @@ social:
   links:
     - "https://instagram.com/djfilm_agen"
     - "https://vimeo.com/djfilm"
-    - "https://www.linkedin.com/company/djfilm-agen"
+    - "https://www.linkedin.com/in/damien-joyeux/"
     - "https://youtube.com/@djfilm"
 
 google_analytics: ""
