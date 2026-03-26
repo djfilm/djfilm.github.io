@@ -20,7 +20,7 @@
   "projects": [
     {
       "id": "mariage-presentation",
-      "title": "Film de Mariage — Présentation de la prestation",
+      "title": "Maquette de mariage",
       "category": "mariage",
       "category_label": "Mariage",
       "location": "Lot-et-Garonne",
@@ -30,8 +30,8 @@
       "thumbnail_alt": "Présentation de la prestation vidéo mariage DJfilm",
       "video_url": "https://www.youtube.com/embed/sxd6uSs0zQM",
       "video_type": "youtube",
-      "duration": "",
-      "description": "Découvrez ce que je peux réaliser pour votre mariage : captation cinématographique, ambiance, émotions et moments clés de votre journée.",
+      "duration": "1:12",
+      "description": "Présentation d'une maquette avec divers plans vidéos de mariage.",
       "featured": true,
       "tags": ["mariage", "cinématique", "Lot-et-Garonne"]
     }
