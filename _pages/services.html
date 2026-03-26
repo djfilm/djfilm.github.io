@@ -66,8 +66,7 @@ breadcrumbs:
 
       <div class="service-block__media">
         {% if service.images %}
-        {% assign img_count = service.images | size %}
-        <div class="service-carousel{% if img_count == 6 %} service-carousel--6{% endif %}" role="img" aria-label="{{ service.thumbnail_alt }}">
+        <div class="service-carousel" role="img" aria-label="{{ service.thumbnail_alt }}">
           {% for img in service.images %}
           <img
             src="{{ img | relative_url }}"

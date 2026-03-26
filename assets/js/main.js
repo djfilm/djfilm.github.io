@@ -288,4 +288,54 @@
     });
   }
 
+
+  /* =====================================================================
+     11. CAROUSEL DE SERVICES — cycle automatique selon le nombre d'images
+     ===================================================================== */
+  var carousels = document.querySelectorAll('.service-carousel');
+
+  if (carousels.length) {
+    var SLIDE_DURATION = 5; // secondes par slide
+    var FADE_DURATION  = 1; // secondes pour le fondu
+    var generatedCounts = {};
+    var keyframeRules = [];
+
+    carousels.forEach(function (carousel) {
+      var slides = carousel.querySelectorAll('.service-carousel__slide');
+      var count  = slides.length;
+      if (count < 2) return;
+
+      var total = count * SLIDE_DURATION;
+      var name  = 'carousel-fade-' + count;
+
+      if (!generatedCounts[count]) {
+        var p1 = (FADE_DURATION / total * 100).toFixed(2);
+        var p2 = (SLIDE_DURATION / total * 100).toFixed(2);
+        var p3 = ((SLIDE_DURATION + FADE_DURATION) / total * 100).toFixed(2);
+        keyframeRules.push(
+          '@keyframes ' + name + ' {' +
+          '  0%     { opacity: 0; transform: scale(1.06); }' +
+          '  ' + p1 + '% { opacity: 1; transform: scale(1.04); }' +
+          '  ' + p2 + '% { opacity: 1; transform: scale(1.00); }' +
+          '  ' + p3 + '% { opacity: 0; transform: scale(1.00); }' +
+          '  100%   { opacity: 0; transform: scale(1.00); }' +
+          '}'
+        );
+        generatedCounts[count] = true;
+      }
+
+      slides.forEach(function (slide, i) {
+        slide.style.animationName     = name;
+        slide.style.animationDuration = total + 's';
+        slide.style.animationDelay    = (i * SLIDE_DURATION) + 's';
+      });
+    });
+
+    if (keyframeRules.length) {
+      var style = document.createElement('style');
+      style.textContent = keyframeRules.join('\n');
+      document.head.appendChild(style);
+    }
+  }
+
 })();
