@@ -670,6 +670,9 @@ main a:not([class]):hover {
 .section-intro {
   background: var(--c-bg-alt);
 }
+.section-intro .container {
+  padding-left: 0;
+}
 
 .intro-grid {
   display: grid;
@@ -700,8 +703,7 @@ main a:not([class]):hover {
   display: block;
 }
 video.intro-image {
-  aspect-ratio: 2.4/1;
-  border-radius: var(--radius-md) 0 0 var(--radius-md);
+  aspect-ratio: 16/9;
 }
 video.intro-image::-webkit-media-controls,
 video.intro-image::-webkit-media-controls-enclosure,
