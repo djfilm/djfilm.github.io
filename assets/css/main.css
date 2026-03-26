@@ -1249,19 +1249,19 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
   will-change: opacity, transform;
 }
 
-/* Fallback no-JS — 5 slides, cycle 25s */
+/* Fallback no-JS — 5 slides, cycle 15s (3s par slide) */
 .service-carousel__slide:nth-child(1) { animation-delay:  0s; }
-.service-carousel__slide:nth-child(2) { animation-delay:  5s; }
-.service-carousel__slide:nth-child(3) { animation-delay: 10s; }
-.service-carousel__slide:nth-child(4) { animation-delay: 15s; }
-.service-carousel__slide:nth-child(5) { animation-delay: 20s; }
+.service-carousel__slide:nth-child(2) { animation-delay:  3s; }
+.service-carousel__slide:nth-child(3) { animation-delay:  6s; }
+.service-carousel__slide:nth-child(4) { animation-delay:  9s; }
+.service-carousel__slide:nth-child(5) { animation-delay: 12s; }
 
 @keyframes carousel-fade-5 {
-  0%   { opacity: 0; transform: scale(1.06); }
-  4%   { opacity: 1; transform: scale(1.04); }
-  20%  { opacity: 1; transform: scale(1.00); }
-  24%  { opacity: 0; transform: scale(1.00); }
-  100% { opacity: 0; transform: scale(1.00); }
+  0%     { opacity: 0; transform: scale(1.06); }
+  5.33%  { opacity: 1; transform: scale(1.04); }
+  20%    { opacity: 1; transform: scale(1.00); }
+  25.33% { opacity: 0; transform: scale(1.00); }
+  100%   { opacity: 0; transform: scale(1.00); }
 }
 
 .service-zone {

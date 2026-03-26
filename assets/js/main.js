@@ -295,8 +295,8 @@
   var carousels = document.querySelectorAll('.service-carousel');
 
   if (carousels.length) {
-    var SLIDE_DURATION = 5; // secondes par slide
-    var FADE_DURATION  = 1; // secondes pour le fondu
+    var SLIDE_DURATION = 3;   // secondes par slide
+    var FADE_DURATION  = 0.8; // secondes pour le fondu
     var generatedCounts = {};
     var keyframeRules = [];
 
