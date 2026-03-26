@@ -246,15 +246,21 @@
      ===================================================================== */
   var videoModal    = document.getElementById('video-modal');
   var videoPlayer   = document.getElementById('video-modal-player');
+  var videoIframe   = document.getElementById('video-modal-iframe');
   var modalClose    = document.getElementById('video-modal-close');
   var modalBackdrop = document.getElementById('video-modal-backdrop');
 
-  if (videoModal && videoPlayer) {
+  if (videoModal && (videoPlayer || videoIframe)) {
 
     function openVideoModal(src, type) {
-      if (type === 'local') {
+      if (type === 'youtube') {
+        videoIframe.src = src + '?autoplay=1&rel=0';
+        videoIframe.hidden = false;
+        if (videoPlayer) videoPlayer.hidden = true;
+      } else {
         videoPlayer.src = src;
-        videoPlayer.style.display = 'block';
+        videoPlayer.hidden = false;
+        if (videoIframe) videoIframe.hidden = true;
       }
       videoModal.hidden = false;
       document.body.style.overflow = 'hidden';
@@ -265,10 +271,8 @@
     function closeVideoModal() {
       videoModal.hidden = true;
       document.body.style.overflow = '';
-      if (videoPlayer) {
-        videoPlayer.pause();
-        videoPlayer.src = '';
-      }
+      if (videoPlayer) { videoPlayer.pause(); videoPlayer.src = ''; videoPlayer.hidden = true; }
+      if (videoIframe) { videoIframe.src = ''; videoIframe.hidden = true; }
     }
 
     // Déclencheurs
