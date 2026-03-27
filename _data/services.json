@@ -90,7 +90,8 @@
         "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_5.webp",
         "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_6.webp",
         "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_7.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_8.webp"
+        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_8.webp",
+        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_9.webp"
       ],
       "cta": {
         "label": "Me contacter",
@@ -140,47 +141,6 @@
       },
       "zone": "Agen et toute la Nouvelle-Aquitaine",
       "keywords": ["captation événement Agen", "vidéo conférence Agen", "filmage événement 47"]
-    },
-    {
-      "id": "publicite",
-      "icon": "play",
-      "number": "04",
-      "title": "Publicité & Image de marque",
-      "subtitle": "Spots · Publicités",
-      "tagline": "Des contenus qui captivent et convertissent",
-      "description": "À l'ère du tout-vidéo, vos contenus doivent se démarquer. Je réalise des spots publicitaires percutants pensés pour votre audience.",
-      "features": [
-        "Concept créatif",
-        "Réalisation & direction artistique",
-        "Motion design et titre animés",
-        "Musique sous licence (royalty-free)",
-        "Déclinaisons multi-formats",
-        "Optimisation pour chaque plateforme"
-      ],
-      "process": [
-        "Définition de la cible et des objectifs",
-        "Création du concept créatif",
-        "Tournage en 1 journée",
-        "Post-production & motion design",
-        "Revues et ajustements",
-        "Livraison multi-formats"
-      ],
-      "thumbnail": "/assets/images/services/pub/pub_1.webp",
-      "thumbnail_alt": "Production publicitaire et contenu vidéo par DJfilm Agen",
-      "images": [
-        "/assets/images/services/pub/pub_1.webp",
-        "/assets/images/services/pub/pub_2.webp",
-        "/assets/images/services/pub/pub_3.webp",
-        "/assets/images/services/pub/pub_4.webp",
-        "/assets/images/services/pub/pub_5.webp",
-        "/assets/images/services/pub/pub_6.webp"
-      ],
-      "cta": {
-        "label": "Me contacter",
-        "url": "/contact/?service=publicite"
-      },
-      "zone": "France entière, production délocalisée possible",
-      "keywords": ["spot publicitaire Agen", "vidéo réseaux sociaux Agen", "production vidéo pub 47"]
     }
   ],
   "equipment": {

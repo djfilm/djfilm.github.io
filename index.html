@@ -157,22 +157,6 @@ keywords:
   </div>
 </section>
 
-<!-- ============================================================
-     STATS
-     ============================================================ -->
-<section class="section-stats section--sm" aria-label="Chiffres clés">
-  <div class="container">
-    <div class="stats-grid">
-      {% for stat in d.stats.items %}
-      <div class="stat-item" data-reveal data-reveal-delay="{{ forloop.index }}">
-        <span class="stat-item__value">{{ stat.value }}</span>
-        <span class="stat-item__label">{{ stat.label }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 
 <!-- ============================================================
      CTA BANNER

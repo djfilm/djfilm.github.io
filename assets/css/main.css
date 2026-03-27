@@ -738,15 +738,15 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
 
 .services-preview-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-4);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
 }
 
 .service-preview-card {
   background: rgba(255,255,255,.82);
   border: 1.5px solid rgba(255,255,255,.9);
   border-radius: var(--radius-lg);
-  padding: var(--space-8);
+  padding: var(--space-10);
   transition: border-color var(--dur-base), transform var(--dur-base), box-shadow var(--dur-base);
   position: relative;
   overflow: hidden;
@@ -770,17 +770,17 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
 .service-preview-card:hover::before { opacity: 1; }
 
 .service-preview-card__title {
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   font-weight: 500;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
   color: var(--c-text);
   position: relative;
 }
 .service-preview-card__desc {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--c-text-muted);
   line-height: var(--leading-loose);
-  margin-bottom: var(--space-6);
+  margin-bottom: var(--space-8);
   position: relative;
 }
 .service-preview-card__link {
@@ -834,7 +834,7 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
   font-family: var(--font-serif);
   font-size: var(--text-4xl);
   font-weight: 400;
-  color: var(--c-surface-alt);
+  color: var(--c-gold);
   line-height: 1;
   margin-bottom: var(--space-5);
   letter-spacing: -.04em;
@@ -845,7 +845,7 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
   font-size: var(--text-lg);
   font-weight: 500;
   margin-bottom: var(--space-3);
-  color: var(--c-white);
+  color: var(--c-gold);
 }
 .value-item__text {
   font-size: var(--text-sm);
@@ -1859,6 +1859,96 @@ a.contact-channel__value:hover { color: var(--c-gold); }
   line-height: var(--leading-loose);
 }
 
+/* Carte contact */
+.contact-map-wrap { display: flex; align-items: center; justify-content: center; }
+
+.contact-map {
+  background: var(--c-bg-card);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(var(--space-8), 4vw, var(--space-12));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  width: 100%;
+}
+
+.contact-map__label {
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+}
+
+.contact-map__svg {
+  width: 100%;
+  max-width: 480px;
+  overflow: visible;
+}
+
+.cmap-path path {
+  fill: var(--c-bg);
+  stroke: var(--c-border);
+  stroke-width: 1;
+  stroke-linejoin: round;
+  transition: fill .2s ease, stroke .2s ease;
+  cursor: default;
+}
+.cmap-path:hover path {
+  fill: var(--c-gold-subtle);
+  stroke: var(--c-border-gold);
+  stroke-width: 1.5;
+}
+
+.cmap-path--home path {
+  fill: var(--c-gold-subtle);
+  stroke: var(--c-gold);
+  stroke-width: 1.5;
+}
+.cmap-path--home:hover path {
+  fill: rgba(196,160,80,.18);
+}
+
+.cmap-num {
+  fill: var(--c-text-muted);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  pointer-events: none;
+  letter-spacing: .06em;
+}
+.cmap-path--home .cmap-num {
+  fill: var(--c-gold);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cmap-home-dot {
+  fill: var(--c-gold);
+  pointer-events: none;
+}
+
+.contact-map__caption {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+}
+.contact-map__caption-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c-gold);
+  flex-shrink: 0;
+}
+
 /* Formulaire */
 .contact-form {
   background: var(--c-bg-card);
@@ -2182,7 +2272,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
   .contact-grid { grid-template-columns: 1fr; }
   .contact-info { order: 2; }
-  .contact-form-wrap { order: 1; }
+  .contact-map-wrap { order: 1; }
 
   .faq-layout { grid-template-columns: 1fr; }
   .faq-categories {

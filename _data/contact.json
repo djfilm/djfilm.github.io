@@ -7,7 +7,7 @@
   "hero": {
     "label": "Contact",
     "title": "Discutons de\nvotre projet",
-    "subtitle": "Premier échange gratuit — réponse sous 48h."
+    "subtitle": ""
   },
   "intro": {
     "title": "Prêt à donner vie\nà votre projet ?",
@@ -28,7 +28,7 @@
       "label": "Par e-mail",
       "value": "djfilm@outlook.fr",
       "url": "mailto:djfilm@outlook.fr",
-      "detail": "Réponse sous 48h ouvrées"
+      "detail": ""
     },
     {
       "id": "location",
@@ -36,7 +36,7 @@
       "label": "Basé à",
       "value": "Agen, Lot-et-Garonne (47)",
       "url": null,
-      "detail": "Déplacements sur toute la Nouvelle-Aquitaine et France"
+      "detail": "Déplacements sur toute la Nouvelle-Aquitaine"
     }
   ],
   "form": {
@@ -104,7 +104,7 @@
   },
   "availability": {
     "title": "Disponibilité & délais",
-    "text": "Je travaille sur devis et réserve les dates au fur et à mesure. Pour les mariages, je recommande de prendre contact au minimum 6 à 12 mois à l'avance. Pour les projets d'entreprise, 4 à 6 semaines suffisent généralement.",
+    "text": "Je travaille sur devis et réserve les dates au fur et à mesure. Pour les mariages, je recommande de me contacter le plus tôt possible. Pour les projets d’entreprise, quelques semaines suffisent généralement.",
     "note": "Les dates sont réservées définitivement après signature du contrat et versement de l'acompte."
   }
 }
