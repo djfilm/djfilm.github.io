@@ -915,48 +915,47 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
 
 .dept-map-svg {
   width: 100%;
-  max-width: 300px;
+  max-width: 520px;
+  overflow: visible;
 }
 
-.dept-edges line {
-  stroke: rgba(93,196,145,.12);
+.dept-path path {
+  fill: rgba(255,255,255,.05);
+  stroke: rgba(93,196,145,.35);
   stroke-width: 1;
-}
-
-.dept-hex polygon {
-  fill: rgba(255,255,255,.04);
-  stroke: rgba(93,196,145,.3);
-  stroke-width: 1.5;
+  stroke-linejoin: round;
   transition: fill .2s ease, stroke .2s ease;
   cursor: default;
 }
-.dept-hex:hover polygon {
-  fill: rgba(93,196,145,.1);
-  stroke: rgba(93,196,145,.65);
+.dept-path:hover path {
+  fill: rgba(93,196,145,.13);
+  stroke: rgba(93,196,145,.75);
+  stroke-width: 1.5;
 }
 
-.dept-hex--home polygon {
-  fill: rgba(93,196,145,.13);
+.dept-path--home path {
+  fill: rgba(93,196,145,.15);
   stroke: var(--c-gold-light);
-  stroke-width: 2;
+  stroke-width: 1.5;
 }
-.dept-hex--home:hover polygon {
-  fill: rgba(93,196,145,.22);
+.dept-path--home:hover path {
+  fill: rgba(93,196,145,.28);
 }
 
 .dept-num {
-  fill: var(--c-gold-light);
-  font-family: var(--font-serif);
-  font-size: 15px;
-  font-weight: 400;
+  fill: rgba(220,240,225,.7);
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
   text-anchor: middle;
   dominant-baseline: middle;
   pointer-events: none;
-  letter-spacing: .03em;
+  letter-spacing: .06em;
 }
-.dept-hex--home .dept-num {
+.dept-path--home .dept-num {
   fill: #fff;
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .dept-home-dot {
