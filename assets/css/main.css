@@ -402,6 +402,11 @@ main a:not([class]):hover {
 /* Homepage : texte blanc sur hero sombre (non scrollée uniquement) */
 body[data-page="home"] .site-header:not(.is-scrolled) .nav-link { color: #fff; }
 body[data-page="home"] .site-header:not(.is-scrolled) .nav-link.is-active { color: #fff; }
+/* Homepage mobile : hamburger blanc sur fond sombre */
+body[data-page="home"] .site-header:not(.is-scrolled) .nav-toggle__bar { background: #fff; }
+/* Homepage mobile : liens noirs dans le menu ouvert (fond blanc) */
+body[data-page="home"] .site-header:not(.is-scrolled) .site-nav.is-open .nav-link,
+body[data-page="home"] .site-header:not(.is-scrolled) .site-nav.is-open .nav-link.is-active { color: var(--c-text); }
 
 /* Nav CTA */
 .nav-item--cta .btn--outline-gold {
