@@ -48,7 +48,7 @@
         "/assets/images/services/mariage/mariage_5.webp"
       ],
       "cta": {
-        "label": "Réserver ma date",
+        "label": "Me contacter",
         "url": "/contact/?service=mariage"
       },
       "zone": "Agen, Lot-et-Garonne, Nouvelle-Aquitaine et France entière",
@@ -93,7 +93,7 @@
         "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_8.webp"
       ],
       "cta": {
-        "label": "Demander un devis",
+        "label": "Me contacter",
         "url": "/contact/?service=entreprise"
       },
       "zone": "Agen, Lot-et-Garonne, Gironde, Toulouse et alentours",
@@ -135,7 +135,7 @@
         "/assets/images/services/evenement/evenements_3.webp"
       ],
       "cta": {
-        "label": "Discuter de votre événement",
+        "label": "Me contacter",
         "url": "/contact/?service=evenement"
       },
       "zone": "Agen et toute la Nouvelle-Aquitaine",
@@ -145,14 +145,12 @@
       "id": "publicite",
       "icon": "play",
       "number": "04",
-      "title": "Publicité & Contenus",
-      "subtitle": "Spots · Réseaux Sociaux · Campagnes",
+      "title": "Publicité & Image de marque",
+      "subtitle": "Spots · Publicités",
       "tagline": "Des contenus qui captivent et convertissent",
-      "description": "À l'ère du tout-vidéo, vos contenus doivent se démarquer. Je réalise des spots publicitaires percutants, des vidéos réseaux sociaux engageantes et des campagnes digitales mémorables — pensés pour votre audience et optimisés pour chaque plateforme.",
+      "description": "À l'ère du tout-vidéo, vos contenus doivent se démarquer. Je réalise des spots publicitaires percutants pensés pour votre audience.",
       "features": [
-        "Spot TV et web (15 à 60 sec)",
-        "Contenus Instagram, TikTok, YouTube",
-        "Concept créatif et script",
+        "Concept créatif",
         "Réalisation & direction artistique",
         "Motion design et titre animés",
         "Musique sous licence (royalty-free)",
@@ -178,7 +176,7 @@
         "/assets/images/services/pub/pub_6.webp"
       ],
       "cta": {
-        "label": "Lancer un projet pub",
+        "label": "Me contacter",
         "url": "/contact/?service=publicite"
       },
       "zone": "France entière, production délocalisée possible",

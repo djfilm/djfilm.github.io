@@ -394,10 +394,14 @@ main a:not([class]):hover {
 .nav-link.is-active::after { transform: scaleX(1); }
 .nav-link.is-active { color: var(--c-text); }
 
-/* Navbar noire au-dessus du hero (non scrollée) */
+/* Navbar transparente sur pages claires (non scrollée) */
 .site-header:not(.is-scrolled) .nav-link { color: #1C1C1E; }
 .site-header:not(.is-scrolled) .nav-link.is-active { color: #1C1C1E; }
 .site-header:not(.is-scrolled) .nav-link:hover { color: var(--c-gold); }
+
+/* Homepage : texte blanc sur hero sombre (non scrollée uniquement) */
+body[data-page="home"] .site-header:not(.is-scrolled) .nav-link { color: #fff; }
+body[data-page="home"] .site-header:not(.is-scrolled) .nav-link.is-active { color: #fff; }
 
 /* Nav CTA */
 .nav-item--cta .btn--outline-gold {
