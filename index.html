@@ -173,29 +173,6 @@ keywords:
   </div>
 </section>
 
-<!-- ============================================================
-     TÉMOIGNAGES — Aperçu
-     ============================================================ -->
-{% assign testimonials = site.data.testimonials %}
-{% assign featured_testimonials = testimonials.testimonials | where: "featured", true %}
-<section class="section-testimonials-preview section" aria-labelledby="testimonials-preview-title">
-  <div class="container">
-    <p class="section-label text-center" data-reveal>{{ d.testimonial_preview.label }}</p>
-    <h2 class="section-title text-center" id="testimonials-preview-title" data-reveal data-reveal-delay="1">{{ d.testimonial_preview.title }}</h2>
-
-    <div class="testimonials-preview-grid">
-      {% for t in featured_testimonials limit: 3 %}
-      <div data-reveal data-reveal-delay="{{ forloop.index }}">
-        {% include components/testimonial-card.html testimonial=t short=true %}
-      </div>
-      {% endfor %}
-    </div>
-
-    <div class="text-center" style="margin-top: 3rem;" data-reveal>
-      <a href="{{ d.testimonial_preview.cta.url | relative_url }}" class="btn btn--outline-gold">{{ d.testimonial_preview.cta.label }}</a>
-    </div>
-  </div>
-</section>
 
 <!-- ============================================================
      CTA BANNER

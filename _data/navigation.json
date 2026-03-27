@@ -21,11 +21,6 @@
       "id": "about"
     },
     {
-      "label": "Témoignages",
-      "url": "/temoignages/",
-      "id": "testimonials"
-    },
-    {
       "label": "FAQ",
       "url": "/faq/",
       "id": "faq"
@@ -59,10 +54,6 @@
     {
       "label": "À propos",
       "url": "/a-propos/"
-    },
-    {
-      "label": "Témoignages",
-      "url": "/temoignages/"
     },
     {
       "label": "FAQ",
