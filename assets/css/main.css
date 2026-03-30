@@ -1436,7 +1436,7 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
   gap: clamp(var(--space-12), 8vw, var(--space-24));
   align-items: center;
 }
-.about-story-paragraphs { display: grid; gap: var(--space-5); margin-top: var(--space-8); }
+.about-story-paragraphs { display: grid; gap: var(--space-5); margin-top: var(--space-18); }
 .about-story-paragraphs p {
   font-size: var(--text-md);
   color: var(--c-text-muted);
