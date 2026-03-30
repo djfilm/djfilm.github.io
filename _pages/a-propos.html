@@ -33,15 +33,13 @@ breadcrumbs:
         </div>
       </div>
       <div data-reveal data-reveal-delay="2">
-        <img
-          src="{{ d.story.image | relative_url }}"
-          alt="{{ d.story.image_alt }}"
-          class="about-story-img"
-          loading="lazy"
-          decoding="async"
-          width="600"
-          height="800"
-        >
+        <div class="service-carousel about-story-carousel" role="img" aria-label="{{ d.story.image_alt }}">
+          <img src="/assets/images/aboutme/aboutme_1.webp" alt="{{ d.story.image_alt }}" class="service-carousel__slide" loading="eager" decoding="async">
+          <img src="/assets/images/aboutme/aboutme_2.webp" alt="{{ d.story.image_alt }}" class="service-carousel__slide" loading="lazy" decoding="async">
+          <img src="/assets/images/aboutme/aboutme_3.webp" alt="{{ d.story.image_alt }}" class="service-carousel__slide" loading="lazy" decoding="async">
+          <img src="/assets/images/aboutme/aboutme_4.webp" alt="{{ d.story.image_alt }}" class="service-carousel__slide" loading="lazy" decoding="async">
+          <img src="/assets/images/aboutme/aboutme_5.webp" alt="{{ d.story.image_alt }}" class="service-carousel__slide" loading="lazy" decoding="async">
+        </div>
       </div>
     </div>
   </div>

@@ -1448,6 +1448,9 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
   object-fit: cover;
   border-radius: var(--radius-md);
 }
+.about-story-carousel {
+  aspect-ratio: 3/4;
+}
 
 .values-cards {
   display: grid;
@@ -2266,7 +2269,8 @@ a.contact-channel__value:hover { color: var(--c-gold); }
   .intro-grid,
   .about-story-grid { grid-template-columns: 1fr; }
   .intro-image-wrap { order: -1; max-width: 400px; margin-inline: auto; }
-  .about-story-img { aspect-ratio: 16/9; }
+  .about-story-img,
+  .about-story-carousel { aspect-ratio: 16/9; }
 
   .service-block__body { grid-template-columns: 1fr; }
   .service-block:nth-child(even) .service-block__body { direction: ltr; }
