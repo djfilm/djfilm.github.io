@@ -15,21 +15,6 @@
       <img src="{{ '/assets/images/Logo_1024.webp' | relative_url }}" alt="{{ g.brand.name }}" class="logo-img" width="120" height="40">
     </a>
 
-    <!-- Navigation principale -->
-    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
-      <ul class="nav-list" role="list">
-        {% for item in nav %}
-        <li class="nav-item{% if item.cta %} nav-item--cta{% endif %}">
-          <a
-            href="{{ item.url | relative_url }}"
-            class="nav-link{% if item.cta %} btn btn--outline-gold{% endif %}{% if page.url == item.url %} is-active{% endif %}"
-            {% if page.url == item.url %}aria-current="page"{% endif %}
-          >{{ item.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-    </nav>
-
     <!-- Hub — lien vers le linktree maison -->
     <a
       href="{{ site.hub_url }}"
@@ -68,3 +53,20 @@
 
   </div>
 </header>
+
+<!-- Navigation principale — en dehors du header pour éviter le bug iOS Safari
+     avec backdrop-filter et position:fixed (le header a backdrop-filter,
+     ce qui ferait que la nav fixed serait positionnée relativement au header) -->
+<nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+  <ul class="nav-list" role="list">
+    {% for item in nav %}
+    <li class="nav-item{% if item.cta %} nav-item--cta{% endif %}">
+      <a
+        href="{{ item.url | relative_url }}"
+        class="nav-link{% if item.cta %} btn btn--outline-gold{% endif %}{% if page.url == item.url %} is-active{% endif %}"
+        {% if page.url == item.url %}aria-current="page"{% endif %}
+      >{{ item.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

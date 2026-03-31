@@ -405,8 +405,8 @@ body[data-page="home"] .site-header:not(.is-scrolled) .nav-link.is-active { colo
 /* Homepage mobile : hamburger blanc sur fond sombre */
 body[data-page="home"] .site-header:not(.is-scrolled) .nav-toggle__bar { background: #fff; }
 /* Homepage mobile : liens noirs dans le menu ouvert (fond blanc) */
-body[data-page="home"] .site-header:not(.is-scrolled) .site-nav.is-open .nav-link,
-body[data-page="home"] .site-header:not(.is-scrolled) .site-nav.is-open .nav-link.is-active { color: var(--c-text); }
+body[data-page="home"] .site-nav.is-open .nav-link,
+body[data-page="home"] .site-nav.is-open .nav-link.is-active { color: var(--c-text); }
 
 /* Nav CTA */
 .nav-item--cta .btn--outline-gold {
@@ -2645,8 +2645,8 @@ a.contact-channel__value:hover { color: var(--c-gold); }
   .site-header.nav-open .nav-toggle__bar { background: var(--c-text); }
 
   /* Liens toujours sombres dans le menu ouvert, toutes pages confondues */
-  body .site-header .site-nav.is-open .nav-link,
-  body .site-header .site-nav.is-open .nav-link.is-active {
+  .site-nav.is-open .nav-link,
+  .site-nav.is-open .nav-link.is-active {
     color: var(--c-text);
   }
 
