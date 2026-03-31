@@ -2410,7 +2410,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 .pricing-card__price {
   font-family: var(--font-serif);
   font-size: clamp(var(--text-2xl), 2.5vw, var(--text-3xl));
-  font-weight: 400;
+  font-weight: 700;
   color: var(--c-text);
   line-height: var(--leading-tight);
   letter-spacing: var(--tracking-tight);
