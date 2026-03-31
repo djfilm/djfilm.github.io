@@ -65,7 +65,10 @@ breadcrumbs:
         <!-- En-tête carte -->
         <div class="pricing-card__header">
           <p class="pricing-card__name">{{ plan.name }}</p>
-          <p class="pricing-card__price">{{ plan.price }}</p>
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-from">{{ plan.price_from }}</span>
+            {{ plan.price }}
+          </p>
           <p class="pricing-card__tagline">{{ plan.tagline }}</p>
         </div>
 
