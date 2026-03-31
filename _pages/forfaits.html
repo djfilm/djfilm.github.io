@@ -50,7 +50,7 @@ breadcrumbs:
 
       {% for plan in d.pricing.plans %}
       <article
-        class="pricing-card{% if plan.featured %} pricing-card--featured{% endif %}"
+        class="pricing-card pricing-card--{{ plan.id }}{% if plan.featured %} pricing-card--featured{% endif %}"
         id="forfait-{{ plan.id }}"
         role="listitem"
         data-reveal
