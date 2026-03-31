@@ -2417,13 +2417,8 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 }
 
 .pricing-card__price-from {
-  display: block;
-  font-family: var(--font-sans);
-  font-size: var(--text-xs);
+  font-family: var(--font-serif);
   font-weight: 400;
-  letter-spacing: .04em;
-  color: var(--c-text-faint);
-  margin-bottom: var(--space-1);
 }
 
 .pricing-card__tagline {
