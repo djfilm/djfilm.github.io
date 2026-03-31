@@ -1,0 +1,139 @@
+---
+layout: page
+page_id: forfaits
+permalink: /forfaits/
+seo_title: "Forfaits Vidéo — Mariage, Événement, Entreprise | DJfilm"
+seo_description: "Découvrez les forfaits vidéo de DJfilm : Essentiel, Standard et Premium. Des formules adaptées à chaque projet — mariage, événement, entreprise — à partir de 949 €."
+og_image: "/assets/images/og-services.jpg"
+keywords:
+  - forfait vidéo mariage Agen
+  - prix vidéaste Lot-et-Garonne
+  - tarif film mariage 47
+  - forfait captation événement
+  - devis vidéo entreprise Agen
+breadcrumbs:
+  - name: "Forfaits"
+    url: "/forfaits/"
+---
+
+{% assign d = site.data.forfaits %}
+
+<!-- ============================================================
+     Hero
+     ============================================================ -->
+<section class="page-hero" aria-labelledby="forfaits-hero-title">
+  <div class="page-hero__inner container">
+    <p class="page-hero__label" data-reveal>{{ d.hero.label }}</p>
+    <h1 class="page-hero__title" id="forfaits-hero-title" data-reveal data-reveal-delay="1">{{ d.hero.title }}</h1>
+    <p class="page-hero__subtitle" data-reveal data-reveal-delay="2">{{ d.hero.subtitle }}</p>
+    <div class="page-hero__actions" data-reveal data-reveal-delay="3">
+      <a href="{{ d.hero.cta_primary.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.hero.cta_primary.label }}</a>
+      <a href="{{ d.hero.cta_secondary.url | relative_url }}" class="btn btn--outline-gold btn--lg">{{ d.hero.cta_secondary.label }}</a>
+    </div>
+  </div>
+  <div class="page-hero__bg" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================================
+     Section Forfaits
+     ============================================================ -->
+<section class="section section-forfaits" aria-labelledby="forfaits-pricing-title">
+  <div class="container">
+
+    <div class="text-center" data-reveal>
+      <p class="section-label">{{ d.pricing.label }}</p>
+      <h2 class="section-title" id="forfaits-pricing-title">{{ d.pricing.title }}</h2>
+      <p class="section-subtitle">{{ d.pricing.subtitle }}</p>
+    </div>
+
+    <div class="pricing-grid" role="list">
+
+      {% for plan in d.pricing.plans %}
+      <article
+        class="pricing-card{% if plan.featured %} pricing-card--featured{% endif %}"
+        id="forfait-{{ plan.id }}"
+        role="listitem"
+        data-reveal
+        data-reveal-delay="{{ forloop.index }}"
+        aria-label="Forfait {{ plan.name }}"
+      >
+
+        {% if plan.featured %}
+        <div class="pricing-card__badge" aria-label="Formule recommandée">Recommandé</div>
+        {% endif %}
+
+        <!-- En-tête carte -->
+        <div class="pricing-card__header">
+          <p class="pricing-card__name">{{ plan.name }}</p>
+          <p class="pricing-card__price">{{ plan.price }}</p>
+          <p class="pricing-card__tagline">{{ plan.tagline }}</p>
+        </div>
+
+        <!-- Prestations incluses -->
+        <ul class="pricing-card__features" aria-label="Ce qui est inclus dans le forfait {{ plan.name }}">
+          {% for feature in plan.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+
+        <!-- "Parfait pour" -->
+        <p class="pricing-card__note">
+          <strong>Parfait pour&nbsp;:</strong>&nbsp;{{ plan.perfect_for }}
+        </p>
+
+        <!-- CTA -->
+        <div class="pricing-card__cta">
+          <a
+            href="{{ plan.cta_url | relative_url }}"
+            class="btn{% if plan.featured %} btn--gold{% else %} btn--outline-gold{% endif %} btn--full"
+            aria-label="Demander un devis pour le forfait {{ plan.name }}"
+          >{{ plan.cta_label }}</a>
+        </div>
+
+      </article>
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     Section Réassurance
+     ============================================================ -->
+<section class="section section--sm forfaits-reassurance" aria-labelledby="forfaits-reassurance-title">
+  <div class="container">
+
+    <div class="text-center" data-reveal>
+      <p class="section-label">{{ d.reassurance.label }}</p>
+      <h2 class="section-title" id="forfaits-reassurance-title">{{ d.reassurance.title }}</h2>
+      <p class="section-subtitle">{{ d.reassurance.subtitle }}</p>
+    </div>
+
+    <div class="reassurance-grid">
+      {% for item in d.reassurance.items %}
+      <div class="reassurance-item" data-reveal data-reveal-delay="{{ forloop.index }}">
+        <div class="reassurance-item__number" aria-hidden="true">{{ item.number }}</div>
+        <h3 class="reassurance-item__title">{{ item.title }}</h3>
+        <p class="reassurance-item__text">{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA Final
+     ============================================================ -->
+<section class="cta-banner section" aria-labelledby="forfaits-cta-title">
+  <div class="cta-banner__inner container text-center">
+    <p class="section-label" data-reveal>{{ d.cta.label }}</p>
+    <h2 class="cta-banner__title" id="forfaits-cta-title" data-reveal data-reveal-delay="1">{{ d.cta.title }}</h2>
+    <p class="cta-banner__text" data-reveal data-reveal-delay="2">{{ d.cta.text }}</p>
+    <div class="cta-banner__actions" data-reveal data-reveal-delay="3">
+      <a href="{{ d.cta.cta_primary.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.cta.cta_primary.label }}</a>
+      <a href="{{ d.cta.cta_secondary.url | relative_url }}" class="btn btn--ghost btn--lg">{{ d.cta.cta_secondary.label }}</a>
+    </div>
+  </div>
+</section>

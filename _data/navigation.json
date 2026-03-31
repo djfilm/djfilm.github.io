@@ -16,6 +16,11 @@
       "id": "services"
     },
     {
+      "label": "Forfaits",
+      "url": "/forfaits/",
+      "id": "forfaits"
+    },
+    {
       "label": "À propos",
       "url": "/a-propos/",
       "id": "about"
@@ -50,6 +55,10 @@
     {
       "label": "Services",
       "url": "/services/"
+    },
+    {
+      "label": "Forfaits",
+      "url": "/forfaits/"
     },
     {
       "label": "À propos",

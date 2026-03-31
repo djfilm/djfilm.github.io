@@ -1,0 +1,91 @@
+{
+  "hero": {
+    "label": "Forfaits",
+    "title": "Une couverture vidéo\nadaptée à votre projet",
+    "subtitle": "Des formules pensées pour chaque événement — du plus sobre au plus complet.",
+    "cta_primary": { "label": "Demander un devis", "url": "/contact/?from=forfaits" },
+    "cta_secondary": { "label": "Voir les services", "url": "/services/" }
+  },
+  "pricing": {
+    "label": "Forfaits",
+    "title": "Choisissez votre formule",
+    "subtitle": "Trois niveaux de prestation pour couvrir vos mariages, événements et projets d'entreprise selon vos besoins.",
+    "plans": [
+      {
+        "id": "essentiel",
+        "name": "Essentiel",
+        "price": "à partir de 949 €",
+        "tagline": "L'offre idéale pour capturer l'essentiel de votre événement avec efficacité.",
+        "features": [
+          "Captation des temps forts de l'événement selon les besoins du projet",
+          "Montage d'un film condensé, rythmé et efficace",
+          "Livraison d'une vidéo claire, élégante et facile à partager"
+        ],
+        "perfect_for": "une couverture simple, propre et maîtrisée.",
+        "featured": false,
+        "cta_label": "Demander un devis",
+        "cta_url": "/contact/?forfait=essentiel"
+      },
+      {
+        "id": "standard",
+        "name": "Standard",
+        "price": "à partir de 1 399 €",
+        "tagline": "Une formule plus complète pour raconter votre événement avec plus de profondeur.",
+        "features": [
+          "Captation élargie des temps forts, des séquences d'ambiance et des moments importants",
+          "Montage d'un film développé, avec une restitution plus immersive",
+          "Montage plus travaillé pour restituer l'ambiance et mettre en valeur les moments forts"
+        ],
+        "perfect_for": "un rendu plus riche, plus vivant et plus complet.",
+        "featured": false,
+        "cta_label": "Demander un devis",
+        "cta_url": "/contact/?forfait=standard"
+      },
+      {
+        "id": "premium",
+        "name": "Premium",
+        "price": "à partir de 1 549 €",
+        "tagline": "La formule la plus complète pour une couverture globale et une restitution sur mesure.",
+        "features": [
+          "Captation complète de l'événement jusqu'à la fin prévue",
+          "Restitution sur mesure selon le type de projet et l'objectif recherché",
+          "Mobilisation de l'ensemble du matériel nécessaire en vidéo, son et lumières",
+          "Approche plus complète pour un rendu premium, soigné et pleinement adapté à l'événement"
+        ],
+        "perfect_for": "les projets qui demandent une couverture complète et un résultat haut de gamme.",
+        "featured": true,
+        "cta_label": "Demander un devis",
+        "cta_url": "/contact/?forfait=premium"
+      }
+    ]
+  },
+  "reassurance": {
+    "label": "Pour chaque projet",
+    "title": "Des prestations adaptées\nà chaque contexte",
+    "subtitle": "Que ce soit pour un mariage, un événement ou un projet d'entreprise, chaque formule s'adapte à votre réalité.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Mariage",
+        "text": "Un regard discret et attentif pour capturer les émotions du plus beau jour."
+      },
+      {
+        "number": "02",
+        "title": "Événement",
+        "text": "Conférences, soirées, concerts, cérémonies — une couverture à la hauteur de l'occasion."
+      },
+      {
+        "number": "03",
+        "title": "Entreprise",
+        "text": "Films institutionnels, séminaires, interviews — une approche professionnelle pour votre image."
+      }
+    ]
+  },
+  "cta": {
+    "label": "Contact",
+    "title": "Parlons de votre projet",
+    "text": "Chaque événement est unique. Contactez-moi pour établir ensemble un devis personnalisé, adapté à votre contexte et à vos attentes.",
+    "cta_primary": { "label": "Demander un devis", "url": "/contact/" },
+    "cta_secondary": { "label": "Voir les services", "url": "/services/" }
+  }
+}
