@@ -328,11 +328,6 @@ main a:not([class]):hover {
   top: 0; left: 0; right: 0;
   z-index: 100;
   height: var(--header-h);
-  transition: background var(--dur-slow), backdrop-filter var(--dur-slow), border-color var(--dur-slow);
-  border-bottom: 1px solid transparent;
-}
-
-.site-header.is-scrolled {
   background: rgba(253,252,249,.88);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   backdrop-filter: blur(20px) saturate(1.4);
@@ -416,18 +411,7 @@ main a:not([class]):hover {
 .nav-link.is-active::after { transform: scaleX(1); }
 .nav-link.is-active { color: var(--c-text); }
 
-/* Navbar transparente sur pages claires (non scrollée) —
-   sélecteurs sur .site-nav car la <nav> est hors du <header> */
-.site-nav:not(.is-scrolled) .nav-link { color: #1C1C1E; }
-.site-nav:not(.is-scrolled) .nav-link.is-active { color: #1C1C1E; }
-.site-nav:not(.is-scrolled) .nav-link:hover { color: var(--c-gold); }
-
-/* Homepage : texte blanc sur hero sombre (non scrollée uniquement) */
-body[data-page="home"] .site-nav:not(.is-scrolled) .nav-link { color: #fff; }
-body[data-page="home"] .site-nav:not(.is-scrolled) .nav-link.is-active { color: #fff; }
-/* Homepage mobile : hamburger blanc sur fond sombre */
-body[data-page="home"] .site-header:not(.is-scrolled) .nav-toggle__bar { background: #fff; }
-/* Liens toujours sombres dans le menu ouvert (fond blanc), toutes pages */
+/* Liens toujours sombres dans le menu ouvert (fond blanc) */
 .site-nav.is-open .nav-link,
 .site-nav.is-open .nav-link.is-active { color: var(--c-text); }
 
@@ -520,7 +504,11 @@ body[data-page="home"] .site-header:not(.is-scrolled) .nav-toggle__bar { backgro
 
 .hero__bg-img,
 .hero__bg-video {
-  width: 100%; height: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
+  transform: translate(-50%, -50%);
   object-fit: cover;
   object-position: center;
   opacity: .95;

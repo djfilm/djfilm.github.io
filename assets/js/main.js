@@ -11,26 +11,7 @@
      ===================================================================== */
   const header = document.getElementById('site-header');
 
-  if (header) {
-    let lastScrollY = 0;
-    const SCROLL_THRESHOLD = 20;
-
-    function onScroll() {
-      const y = window.scrollY;
-      const nav = document.getElementById('site-nav');
-      if (y > SCROLL_THRESHOLD) {
-        header.classList.add('is-scrolled');
-        if (nav) nav.classList.add('is-scrolled');
-      } else {
-        header.classList.remove('is-scrolled');
-        if (nav) nav.classList.remove('is-scrolled');
-      }
-      lastScrollY = y;
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll(); // état initial
-  }
+  // Navbar toujours blanche — aucune logique de scroll nécessaire
 
   /* =====================================================================
      2. NAVIGATION MOBILE — hamburger
