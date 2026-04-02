@@ -20,7 +20,7 @@
       "label": "Par téléphone",
       "value": "06 84 88 10 15",
       "url": "tel:+33684881015",
-      "detail": "Du lundi au vendredi, 9h–19h"
+      "detail": "Du lundi au vendredi, 9h–18h"
     },
     {
       "id": "email",
@@ -36,7 +36,7 @@
       "label": "Basé à",
       "value": "Agen, Lot-et-Garonne (47)",
       "url": null,
-      "detail": "Déplacements sur toute la Nouvelle-Aquitaine"
+      "detail": "Déplacements sur le Sud-Ouest"
     }
   ],
   "form": {

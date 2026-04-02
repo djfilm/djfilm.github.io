@@ -93,7 +93,7 @@
       "id": "secret-professionnel",
       "category": "entreprise",
       "question": "Signez-vous des accords de confidentialité ?",
-      "answer": "Oui, je peux signer un accord de confidentialité (NDA) si votre projet l'exige — c'est fréquent pour les films d'entreprise, les lancement de produits ou les événements stratégiques. Ma discrétion sur vos informations est une évidence, et la formaliser par écrit ne pose aucun problème."
+      "answer": "Oui, je peux signer un accord de confidentialité (NDA) si votre projet l'exige — c'est fréquent pour les films d'entreprise, les lancement de produits ou les événements stratégiques. La confidentialité de vos informations est une évidence, et peut être formalisée par écrit."
     },
     {
       "id": "musique",
