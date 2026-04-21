@@ -83,16 +83,6 @@
     "photo": "/assets/images/about-portrait.jpg",
     "photo_alt": "Damien Joyeux, vidéaste DJfilm à Agen"
   },
-  "equipment": {
-    "label": "Équipement",
-    "title": "Du matériel professionnel\npour des résultats premium",
-    "items": [
-      { "category": "Caméras", "detail": "DJI Osmo Pocket 3 — 4K cinématique" },
-      { "category": "Drone", "detail": "DJI Mini 3 — Formation A1 A3" },
-      { "category": "Son", "detail": "DJI Mic 2" },
-      { "category": "Éclairage", "detail": "Panneaux LED — Eclairage variable" }
-    ]
-  },
   "zone": {
     "label": "Zone d'intervention",
     "title": "Basé à Agen,\nactif partout",

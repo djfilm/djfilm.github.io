@@ -97,25 +97,6 @@ breadcrumbs:
   </div>
 </section>
 
-<!-- Équipement -->
-<section class="section-about-equipment section" aria-labelledby="equip-title">
-  <div class="container">
-    <p class="section-label" data-reveal>{{ d.equipment.label }}</p>
-    <h2 class="section-title" id="equip-title" data-reveal data-reveal-delay="1">{{ d.equipment.title }}</h2>
-    <div class="equipment-grid">
-      {% for item in d.equipment.items %}
-      <div class="equipment-item" data-reveal data-reveal-delay="{{ forloop.index | modulo: 3 | plus: 1 }}">
-        <div class="equipment-item__bullet" aria-hidden="true"></div>
-        <div>
-          <div class="equipment-item__category">{{ item.category }}</div>
-          <div class="equipment-item__detail">{{ item.detail }}</div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
 <!-- Zone d'intervention -->
 <section class="section-about-zone section" aria-labelledby="zone-title">
   <div class="container">

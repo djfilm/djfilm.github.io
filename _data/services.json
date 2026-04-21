@@ -143,18 +143,6 @@
       "keywords": ["captation événement Agen", "vidéo conférence Agen", "filmage événement 47"]
     }
   ],
-  "equipment": {
-    "label": "Équipement",
-    "title": "Un matériel professionnel\npour un rendu premium",
-    "items": [
-      { "category": "Caméras", "detail": "Sony FX3, Sony A7 IV — captation 4K cinématique" },
-      { "category": "Optiques", "detail": "Gamme de focales fixes Sigma Art, Tamron — bokeh et piqué maîtrisés" },
-      { "category": "Stabilisation", "detail": "DJI RS 3 Pro gimbal — fluidité des plans en mouvement" },
-      { "category": "Drone", "detail": "DJI Mavic 3 — plans aériens cinématiques (brevet de télépilote)" },
-      { "category": "Son", "detail": "Micros Rode et Sennheiser — captation vocale et ambiance de qualité broadcast" },
-      { "category": "Éclairage", "detail": "Panneaux LED Aputure — maîtrise de la lumière en intérieur" }
-    ]
-  },
   "cta": {
     "title": "Parlons de votre projet",
     "text": "Disponible en Lot-et-Garonne et départements limitrophes.",
