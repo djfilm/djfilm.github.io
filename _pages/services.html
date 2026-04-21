@@ -58,7 +58,7 @@ breadcrumbs:
             src="{{ img | relative_url }}"
             alt="{{ service.thumbnail_alt }}"
             class="service-carousel__slide"
-loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+            loading="eager"
             decoding="async"
           >
           {% endfor %}

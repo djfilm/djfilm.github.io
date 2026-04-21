@@ -101,47 +101,59 @@
       "keywords": ["film entreprise Agen", "vidéo corporate Agen", "production audiovisuelle Agen"]
     },
     {
-      "id": "evenement",
-      "icon": "camera",
-      "number": "03",
-      "title": "Captation d'Événement",
-      "subtitle": "Conférences · Galas · Séminaires",
-      "tagline": "Une autre manière de raconter",
-      "description": "Conférences professionnelles, galas, séminaires, remises de prix — je capture l'énergie et les moments clés de vos événements.",
-      "features": [
-
-                      "Rencontre préparatoire",
-
-                "Repérage du lieu",
-
-        "Multi-caméras",
-        "Captation des temps forts",
-        "Interviews",
-        "Film de l'événement",
-        "Prestation en soirée possible"
-      
+  "id": "immobilier",
+  "icon": "home",
+  "number": "03",
+  "title": "Vidéo Immobilière",
+  "subtitle": "Maisons · Appartements · Biens d’exception",
+  "tagline": "Valoriser chaque espace",
+  "description": "Vidéos immobilières professionnelles pour mettre en valeur vos biens à vendre ou à louer. Plans fluides, lumière maîtrisée et narration visuelle pour déclencher l’intérêt rapidement.",
+  "features": [
+    "Échange sur le bien et l’objectif de diffusion",
+    "Préparation et repérage du lieu",
+    "Tournage sur site",
+    "Montage vidéo optimisé immobilier",
+    "Livraison des fichiers prêts à publier"
     ],
-      "process": [
-        "Échange sur le programme et les moments clés",
-        "Repérage du lieu",
-        "Tournage le jour de l'événement",
-        "Montage express ou standard selon besoin",
-        "Livraison des fichiers"
-      ],
-      "thumbnail": "/assets/images/services/evenement/evenements_1.webp",
-      "thumbnail_alt": "Captation d'événement professionnel par DJfilm Agen",
-      "images": [
-        "/assets/images/services/evenement/evenements_1.webp",
-        "/assets/images/services/evenement/evenements_2.webp",
-        "/assets/images/services/evenement/evenements_3.webp"
-      ],
-      "cta": {
-        "label": "Me contacter",
-        "url": "/contact/?service=evenement"
-      },
-      "zone": "Agen et toute la Nouvelle-Aquitaine",
-      "keywords": ["captation événement Agen", "vidéo conférence Agen", "filmage événement 47"]
-    }
+  "process": [
+    "Échange sur le bien et l’objectif de diffusion",
+    "Préparation et repérage du lieu",
+    "Tournage sur site",
+    "Montage vidéo optimisé immobilier",
+    "Livraison des fichiers prêts à publier"
+  ],
+  "thumbnail": "/assets/images/services/immobilier/immobilier_1.webp",
+  "thumbnail_alt": "Vidéo immobilière professionnelle par DJfilm Agen",
+  "images": [
+    "/assets/images/services/immobilier/immobilier_1.webp",
+    "/assets/images/services/immobilier/immobilier_2.webp",
+    "/assets/images/services/immobilier/immobilier_3.webp",
+    "/assets/images/services/immobilier/immobilier_4.webp",
+    "/assets/images/services/immobilier/immobilier_5.webp",
+    "/assets/images/services/immobilier/immobilier_6.webp",
+    "/assets/images/services/immobilier/immobilier_7.webp",
+    "/assets/images/services/immobilier/immobilier_8.webp",
+    "/assets/images/services/immobilier/immobilier_9.webp",
+    "/assets/images/services/immobilier/immobilier_10.webp",
+    "/assets/images/services/immobilier/immobilier_10.webp",
+    "/assets/images/services/immobilier/immobilier_12.webp",
+    "/assets/images/services/immobilier/immobilier_13.webp",
+    "/assets/images/services/immobilier/immobilier_14.webp",
+    "/assets/images/services/immobilier/immobilier_15.webp",
+    "/assets/images/services/immobilier/immobilier_16.webp"
+  ],
+  "cta": {
+    "label": "Me contacter",
+    "url": "/contact/?service=immobilier"
+  },
+  "zone": "Agen et toute la Nouvelle-Aquitaine",
+  "keywords": [
+    "vidéo immobilier Agen",
+    "film immobilier 47",
+    "valorisation bien immobilier Nouvelle-Aquitaine"
+  ]
+}
+    
   ],
   "cta": {
     "title": "Parlons de votre projet",

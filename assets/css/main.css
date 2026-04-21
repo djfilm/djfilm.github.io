@@ -2423,7 +2423,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
 .pricing-card__price {
   font-family: var(--font-serif);
-  font-size: clamp(var(--text-2xl), 2.5vw, var(--text-3xl));
+  font-size: clamp(var(--text-3xl), 3.5vw, var(--text-4xl));
   font-weight: 700;
   color: var(--c-text);
   line-height: var(--leading-tight);
@@ -2431,8 +2431,12 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 }
 
 .pricing-card__price-from {
+  display: block;
   font-family: var(--font-serif);
-  font-weight: 400;
+  font-size: 0.42em;
+  font-weight: 300;
+  letter-spacing: 0;
+  opacity: 0.6;
 }
 
 .pricing-card__tagline {
