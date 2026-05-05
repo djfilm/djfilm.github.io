@@ -5,3 +5,6 @@ Disallow: /mentions-legales/
 Disallow: /politique-de-confidentialite/
 
 Sitemap: https://djfilm.fr/sitemap.xml
+
+# AI Crawlers — machine-readable site summary
+# LLMs and AI agents: https://djfilm.fr/llms.txt

@@ -194,6 +194,33 @@
   "inLanguage": "fr-FR"
 }
 </script>
+{% elsif page.page_id == 'testimonials' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/temoignages/#webpage",
+  "url": "{{ site.url }}/temoignages/",
+  "name": {{ page.seo_title | jsonify }},
+  "description": {{ page.seo_description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#business" },
+  "inLanguage": "fr-FR"
+}
+</script>
+{% elsif page.page_id == 'forfaits' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "{{ site.url }}/forfaits/#webpage",
+  "url": "{{ site.url }}/forfaits/",
+  "name": {{ page.seo_title | jsonify }},
+  "description": {{ page.seo_description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "inLanguage": "fr-FR"
+}
+</script>
 {% endif %}
 
 <!-- Schema : BreadcrumbList (si la page définit ses breadcrumbs) -->
@@ -234,6 +261,41 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": {{ item.answer | jsonify }}
+      }
+    }{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
+<!-- Schema : Review ItemList (page témoignages uniquement) -->
+{% if page.page_id == 'testimonials' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Avis clients DJfilm — Vidéaste à Agen",
+  "itemListElement": [{% for t in testimonials_data.testimonials %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "{{ t.rating }}",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Person",
+          "name": {{ t.name | jsonify }}
+        },
+        "reviewBody": {{ t.quote | jsonify }},
+        "datePublished": "{{ t.date }}",
+        "itemReviewed": {
+          "@id": "{{ site.url }}/#business"
+        }
       }
     }{% endfor %}
   ]
@@ -302,6 +364,49 @@
       }{% endfor %}
     ]
   }
+}
+</script>
+{% endif %}
+
+<!-- Schema : OfferCatalog (page forfaits uniquement) -->
+{% if page.page_id == 'forfaits' %}
+{% assign forfaits_data = site.data.forfaits %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "OfferCatalog",
+  "name": "Forfaits vidéo DJfilm — Vidéaste à Agen",
+  "provider": {
+    "@id": "{{ site.url }}/#business"
+  },
+  "url": "{{ site.url }}/forfaits/",
+  "itemListElement": [{% for plan in forfaits_data.pricing.plans %}{% unless forloop.first %},{% endunless %}
+    {
+      "@type": "Offer",
+      "name": {{ plan.name | jsonify }},
+      "description": {{ plan.tagline | jsonify }},
+      "url": "{{ site.url }}/forfaits/#{{ plan.id }}",
+      "priceCurrency": "EUR",
+      "price": "{{ plan.price | remove: ' €' | remove: ' ' }}",
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "priceCurrency": "EUR",
+        "price": "{{ plan.price | remove: ' €' | remove: ' ' }}",
+        "valueAddedTaxIncluded": false
+      },
+      "availability": "https://schema.org/InStock",
+      "validFrom": "{{ site.time | date: '%Y-%m-%d' }}",
+      "seller": {
+        "@id": "{{ site.url }}/#business"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": {{ plan.name | jsonify }},
+        "description": {{ plan.tagline | jsonify }},
+        "provider": { "@id": "{{ site.url }}/#business" }
+      }
+    }{% endfor %}
+  ]
 }
 </script>
 {% endif %}

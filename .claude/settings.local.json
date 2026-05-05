@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force)",
+      "Bash(Format-Table -AutoSize)",
+      "WebFetch(domain:again-marketing.com)",
+      "Bash(Get-ChildItem -Path \"c:\\\\Users\\\\MartialBODET\\\\EI Martial BODET\\\\BM-Data - Clients\\\\DJfilm\\\\2026\\\\02-Projet\\\\03-Livrables\\\\[PROD] djfilm.fr\" -Directory)",
+      "PowerShell(\\(Get-Item \"c:\\\\Users\\\\MartialBODET\\\\EI Martial BODET\\\\BM-Data - Clients\\\\DJfilm\\\\2026\\\\02-Projet\\\\03-Livrables\\\\[PROD] djfilm.fr\"\\).Target)"
+    ]
+  }
+}
