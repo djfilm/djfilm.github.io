@@ -15,7 +15,8 @@
     { "id": "entreprise","label": "Entreprise" },
     { "id": "evenement", "label": "Événement" },
     { "id": "publicite", "label": "Publicité" },
-    { "id": "seminaire", "label": "Séminaire" }
+    { "id": "seminaire", "label": "Séminaire" },
+    { "id": "clip",      "label": "Clip" }
   ],
   "projects": [
     {
