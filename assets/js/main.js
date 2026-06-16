@@ -165,11 +165,14 @@
 
         let visibleCount = 0;
         portfolioCards.forEach(function (card) {
+          const wrapper = card.parentElement;
           if (cat === 'all' || card.dataset.category === cat) {
             card.classList.remove('is-hidden');
+            if (wrapper) wrapper.classList.remove('is-hidden');
             visibleCount++;
           } else {
             card.classList.add('is-hidden');
+            if (wrapper) wrapper.classList.add('is-hidden');
           }
         });
 
