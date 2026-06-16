@@ -1162,7 +1162,8 @@ video.intro-image::-internal-media-controls-button-panel { display: none !import
 }
 
 /* État masqué (filtrage) */
-.portfolio-card.is-hidden {
+.portfolio-card.is-hidden,
+.portfolio-grid > div.is-hidden {
   display: none;
 }
 
