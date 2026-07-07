@@ -52,8 +52,8 @@
      {
       "id": "Le-Prince-Noir",
       "title": "Hôtel restaurant Le Prince Noir - Sérignac sur Garonne",
-      "category": "evenement",
-      "category_label": "Événement",
+      "category": "publicite",
+      "category_label": "Publicité",
       "location": "Lot-et-Garonne",
       "thumbnail": "https://img.youtube.com/vi/OHUO9ZhjE50/sddefault.jpg",
       "thumbnail_alt": "Film promotionnel de l'hôtel restaurant Le Prince Noir à Sérignac sur Garonne — DJfilm",
@@ -62,7 +62,7 @@
       "duration": "1:44",
       "description": "Film promotionnel de l'hôtel restaurant Le Prince Noir à Sérignac sur Garonne.",
       "featured": true,
-      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+      "tags": ["publicite", "cinématique", "Lot-et-Garonne"]
     }
   ],
   "cta": {
