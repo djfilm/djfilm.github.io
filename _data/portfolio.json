@@ -78,6 +78,21 @@
       "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "featured": true,
       "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+    },
+             {
+      "id": "chateau-gaubert-2",
+      "title": "Vieux Château Gobert - Vignobles Haverlan (Part 2)",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/lufdGB-FmOQ/sddefault.jpg",
+      "thumbnail_alt": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
+      "video_url": "https://www.youtube.com/embed/lufdGB-FmOQ",
+      "video_type": "youtube",
+      "duration": "1:20",
+      "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
     }
   ],
   "cta": {
