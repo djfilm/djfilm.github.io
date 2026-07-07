@@ -38,14 +38,14 @@ author:
   linkedin:          "https://www.linkedin.com/in/damien-joyeux/"
   linkedin_company:  "https://www.linkedin.com/company/djfilm-fr/"
   youtube:           "https://youtube.com/@djfilm33"
-  tiktok:            "https://www.tiktok.com/@djfilm37"
+
   sameAs:
     - "https://www.facebook.com/people/DJfilm/61575447843138/"
     - "https://www.instagram.com/djfilm33"
     - "https://www.linkedin.com/in/damien-joyeux/"
     - "https://www.linkedin.com/company/djfilm-fr/"
     - "https://youtube.com/@djfilm33"
-    - "https://www.tiktok.com/@djfilm37"
+
 
 # ------------------------------ 4) Plugins compatibles GitHub Pages -----------
 plugins:
@@ -65,7 +65,7 @@ social:
     - "https://www.linkedin.com/in/damien-joyeux/"
     - "https://www.linkedin.com/company/djfilm-fr/"
     - "https://youtube.com/@djfilm33"
-    - "https://www.tiktok.com/@djfilm37"
+
 
 google_analytics: ""
 

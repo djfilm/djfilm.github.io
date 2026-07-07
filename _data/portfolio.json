@@ -25,8 +25,6 @@
       "category": "entreprise",
       "category_label": "Entreprise",
       "location": "Agen",
-      "date": "2026-06-16",
-      "date_label": "2026",
       "thumbnail": "https://img.youtube.com/vi/9v2Cdpqowvc/sddefault.jpg",
       "thumbnail_alt": "Teaser des Défis du TAG 2026 à Agen — DJfilm",
       "video_url": "https://www.youtube.com/embed/9v2Cdpqowvc?si=71b3xOuExunGsJzT",
@@ -42,8 +40,6 @@
       "category": "mariage",
       "category_label": "Mariage",
       "location": "Lot-et-Garonne",
-      "date": "2025-01-01",
-      "date_label": "2025",
       "thumbnail": "https://img.youtube.com/vi/sxd6uSs0zQM/maxresdefault.jpg",
       "thumbnail_alt": "Présentation de la prestation vidéo mariage DJfilm",
       "video_url": "https://www.youtube.com/embed/sxd6uSs0zQM",
@@ -52,6 +48,21 @@
       "description": "Présentation d'une maquette avec divers plans vidéos de mariage.",
       "featured": true,
       "tags": ["mariage", "cinématique", "Lot-et-Garonne"]
+    },
+     {
+      "id": "Le-Prince-Noir",
+      "title": "Hôtel restaurant Le Prince Noir - Sérignac sur Garonne",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/OHUO9ZhjE50/maxresdefault.jpg",
+      "thumbnail_alt": "Film promotionnel de l'hôtel restaurant Le Prince Noir à Sérignac sur Garonne — DJfilm",
+      "video_url": "https://www.youtube.com/embed/OHUO9ZhjE50",
+      "video_type": "youtube",
+      "duration": "1:44",
+      "description": "Film promotionnel de l'hôtel restaurant Le Prince Noir à Sérignac sur Garonne.",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
     }
   ],
   "cta": {
