@@ -79,7 +79,7 @@
       "featured": true,
       "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
     },
-             {
+         {
       "id": "chateau-gaubert-2",
       "title": "Vieux Château Gobert - Vignobles Haverlan (Part 2)",
       "category": "evenement",
@@ -93,6 +93,21 @@
       "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "featured": true,
       "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+    },
+         {
+      "id": "defis-du-tag-2026",
+      "title": "Défis du TAG 2026",
+      "category": "entreprise",
+      "category_label": "Entreprise",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/gW3OH_PFcPE/maxresdefault.jpg",
+      "thumbnail_alt": "Défis du TAG 2026",
+      "video_url": "https://www.youtube.com/embed/gW3OH_PFcPE",
+      "video_type": "youtube",
+      "duration": "2:21",
+      "description": "Défis du TAG 2026",
+      "featured": true,
+      "tags": ["entreprise", "cinématique", "Lot-et-Garonne"]
     }
   ],
   "cta": {
