@@ -63,6 +63,21 @@
       "description": "Film promotionnel de l'hôtel restaurant Le Prince Noir à Sérignac sur Garonne.",
       "featured": true,
       "tags": ["publicite", "cinématique", "Lot-et-Garonne"]
+    },
+         {
+      "id": "chateau-gaubert-1",
+      "title": "Vieux Château Gobert - Vignobles Haverlan (Part 1)",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/99OZGH7kkC8/sddefault.jpg",
+      "thumbnail_alt": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
+      "video_url": "https://www.youtube.com/embed/99OZGH7kkC8",
+      "video_type": "youtube",
+      "duration": "1:41",
+      "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
     }
   ],
   "cta": {
