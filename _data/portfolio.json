@@ -69,7 +69,7 @@
       "title": "Vieux Château Gobert - Vignobles Haverlan (Part 1)",
       "category": "evenement",
       "category_label": "Événement",
-      "location": "Lot-et-Garonne",
+      "location": "Gironde",
       "thumbnail": "https://img.youtube.com/vi/99OZGH7kkC8/maxresdefault.jpg",
       "thumbnail_alt": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "video_url": "https://www.youtube.com/embed/99OZGH7kkC8",
@@ -77,14 +77,14 @@
       "duration": "1:41",
       "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "featured": true,
-      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+      "tags": ["evenement", "cinématique", "Gironde"]
     },
          {
       "id": "chateau-gaubert-2",
       "title": "Vieux Château Gobert - Vignobles Haverlan (Part 2)",
       "category": "evenement",
       "category_label": "Événement",
-      "location": "Lot-et-Garonne",
+      "location": "Gironde",
       "thumbnail": "https://img.youtube.com/vi/lufdGB-FmOQ/maxresdefault.jpg",
       "thumbnail_alt": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "video_url": "https://www.youtube.com/embed/lufdGB-FmOQ",
@@ -92,7 +92,7 @@
       "duration": "1:20",
       "description": "Guinguette annuelle - Vieux Château Gobert - Vignobles Haverlan — DJfilm",
       "featured": true,
-      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+      "tags": ["evenement", "cinématique", "Gironde"]
     },
          {
       "id": "defis-du-tag-2026",
@@ -108,6 +108,21 @@
       "description": "Défis du TAG 2026",
       "featured": true,
       "tags": ["entreprise", "cinématique", "Lot-et-Garonne"]
+    },
+        {
+      "id": "chateau-ste-catherine",
+      "title": "Shooting d'inspiration - Château Ste-Catherine",
+      "category": "mariage",
+      "category_label": "Mariage",
+      "location": "Gironde",
+      "thumbnail": "https://img.youtube.com/vi/H3lOQvDaz2g/sddefault.jpg",
+      "thumbnail_alt": "Shooting d'inspiration - Château Ste-Catherine",
+      "video_url": "https://www.youtube.com/embed/H3lOQvDaz2g",
+      "video_type": "youtube",
+      "duration": "2:59",
+      "description": "Shooting d'inspiration - Château Ste-Catherine",
+      "featured": true,
+      "tags": ["mariage", "cinématique", "Gironde"]
     }
   ],
   "cta": {
