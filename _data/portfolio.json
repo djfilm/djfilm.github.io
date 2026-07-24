@@ -20,6 +20,21 @@
   ],
   "projects": [
     {
+      "id": "mariage A-&-F",
+      "title": "Mariage A & F",
+      "category": "mariage",
+      "category_label": "Mariage",
+      "location": "Gironde",
+      "thumbnail": "https://img.youtube.com/vi/MqgvNABjIdk/maxresdefault.jpg",
+      "thumbnail_alt": "Mariage d'inspiration - Château Ste-Catherine",
+      "video_url": "https://www.youtube.com/embed/MqgvNABjIdk",
+      "video_type": "youtube",
+      "duration": "3:13",
+      "description": "Teaser du mariage de A & F",
+      "featured": true,
+      "tags": ["mariage", "cinématique", "Gironde"]
+    },
+    {
       "id": "Le-Prince-Noir",
       "title": "Hôtel restaurant Le Prince Noir - Sérignac sur Garonne",
       "category": "publicite",
