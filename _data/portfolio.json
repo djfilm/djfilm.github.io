@@ -20,6 +20,21 @@
   ],
   "projects": [
     {
+      "id": "festival-VVPP",
+      "title": "Festival VVPP Passageois",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/tmH0GG6rLcY/maxresdefault.jpg",
+      "thumbnail_alt": "Festival VVPP Passageois - Du Vieux Volant au Pot Percé — DJfilm",
+      "video_url": "https://www.youtube.com/embed/tmH0GG6rLcY",
+      "video_type": "youtube",
+      "duration": "1:20",
+      "description": "Festival VVPP Passageois - Du Vieux Volant au Pot Percé — DJfilm",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Lot-et-Garonne"]
+    },
+    {
       "id": "mariage A-&-F",
       "title": "Mariage A & F",
       "category": "mariage",
