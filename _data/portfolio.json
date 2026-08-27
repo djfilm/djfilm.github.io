@@ -19,6 +19,21 @@
     { "id": "clip",      "label": "Clip" }
   ],
   "projects": [
+   {
+      "id": "Instant O-&-D",
+      "title": "Instant O & D",
+      "category": "mariage",
+      "category_label": "Mariage",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/Th7eu6TGqYQ/maxresdefault.jpg",
+      "thumbnail_alt": "Instant O & D",
+      "video_url": "https://www.youtube.com/embed/Th7eu6TGqYQ",
+      "video_type": "youtube",
+      "duration": "1:57",
+      "description": "Instant O & D",
+      "featured": true,
+      "tags": ["mariage", "cinématique", "Lot-et-Garonne"]
+    },
     {
       "id": "festival-VVPP",
       "title": "Festival VVPP Passageois",
