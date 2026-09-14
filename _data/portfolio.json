@@ -20,6 +20,21 @@
   ],
   "projects": [
    {
+      "id": "The-New-Mirande-Country-&-Rock-Festival-2026",
+      "title": "The New Mirande Country & Rock Festival 2026",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Gers",
+      "thumbnail": "https://img.youtube.com/vi/rF4kz0_KpKg/maxresdefault.jpg",
+      "thumbnail_alt": "The New Mirande Country & Rock Festival 2026",
+      "video_url": "https://www.youtube.com/embed/rF4kz0_KpKg",
+      "video_type": "youtube",
+      "duration": "2:49",
+      "description": "The New Mirande Country & Rock Festival 2026",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Gers"]
+    },
+    {
       "id": "Instant O-&-D",
       "title": "Instant O & D",
       "category": "mariage",
