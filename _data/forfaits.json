@@ -14,8 +14,7 @@
       {
         "id": "essentiel",
         "name": "Essentiel",
-        
-        "price": "sur devis",
+        "price_from": "sur devis",
         "tagline": "L'offre idéale pour capturer l'essentiel de votre événement avec efficacité.",
         "features": [
           "Captation des temps forts de l'événement selon les besoins du projet",
@@ -47,8 +46,7 @@
       {
         "id": "premium",
         "name": "Premium",
-        "price_from": "à partir de",
-        "price": "1 549 €",
+        "price_from": "sur devis",
         "tagline": "La formule la plus complète pour une couverture globale et une restitution sur mesure.",
         "features": [
           "Captation complète de l'événement jusqu'à la fin prévue",
