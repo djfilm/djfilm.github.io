@@ -294,7 +294,7 @@
 
 
   /* =====================================================================
-     11. CAROUSEL DE SERVICES — cycle automatique selon le nombre d'images
+     11. CAROUSEL AUTOMATIQUE — page À propos
      ===================================================================== */
   var carousels = document.querySelectorAll('.service-carousel');
 
@@ -345,6 +345,121 @@
       slides.forEach(function (slide, i) {
         slide.style.animation = name + ' ' + total + 's ease-in-out ' + (i * SLIDE_DURATION) + 's infinite';
       });
+    });
+  }
+
+
+  /* =====================================================================
+     12. MODALE GALERIE — services
+     L'image « _logo » est le seul visuel de la page ; au clic elle ouvre
+     la galerie complète du dossier (grande image + miniatures).
+     ===================================================================== */
+  var galleryModal    = document.getElementById('gallery-modal');
+  var galleryImage    = document.getElementById('gallery-modal-image');
+  var galleryThumbs   = document.getElementById('gallery-modal-thumbs');
+  var galleryTitle    = document.getElementById('gallery-modal-title');
+  var galleryCounter  = document.getElementById('gallery-modal-counter');
+  var galleryPrev     = document.getElementById('gallery-modal-prev');
+  var galleryNext     = document.getElementById('gallery-modal-next');
+  var galleryClose    = document.getElementById('gallery-modal-close');
+  var galleryBackdrop = document.getElementById('gallery-modal-backdrop');
+
+  if (galleryModal && galleryImage) {
+
+    var galleryItems   = [];
+    var galleryIndex   = 0;
+    var galleryAlt     = '';
+    var galleryOpener  = null;
+
+    function galleryShow(index) {
+      if (!galleryItems.length) return;
+      // Boucle sur les deux bords
+      galleryIndex = (index + galleryItems.length) % galleryItems.length;
+
+      galleryImage.src = galleryItems[galleryIndex];
+      galleryImage.alt = galleryAlt + ' — photo ' + (galleryIndex + 1) + ' sur ' + galleryItems.length;
+      galleryCounter.textContent = (galleryIndex + 1) + ' / ' + galleryItems.length;
+
+      var thumbs = galleryThumbs.querySelectorAll('.gallery-modal__thumb');
+      thumbs.forEach(function (thumb, i) {
+        var current = i === galleryIndex;
+        thumb.classList.toggle('is-active', current);
+        thumb.setAttribute('aria-current', current ? 'true' : 'false');
+        if (current) {
+          thumb.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+        }
+      });
+    }
+
+    function galleryBuildThumbs() {
+      galleryThumbs.innerHTML = '';
+      // Une seule image : les miniatures n'apportent rien
+      galleryThumbs.hidden = galleryItems.length < 2;
+      if (galleryThumbs.hidden) return;
+
+      galleryItems.forEach(function (src, i) {
+        var thumb = document.createElement('button');
+        thumb.type = 'button';
+        thumb.className = 'gallery-modal__thumb';
+        thumb.setAttribute('aria-label', 'Afficher la photo ' + (i + 1));
+
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.decoding = 'async';
+
+        thumb.appendChild(img);
+        thumb.addEventListener('click', function () { galleryShow(i); });
+        galleryThumbs.appendChild(thumb);
+      });
+    }
+
+    function openGallery(trigger) {
+      var raw = trigger.getAttribute('data-gallery-images') || '';
+      galleryItems = raw.split('|').filter(function (src) { return src !== ''; });
+      if (!galleryItems.length) return;
+
+      galleryOpener = trigger;
+      galleryAlt    = trigger.getAttribute('data-gallery-alt') || '';
+      galleryTitle.textContent = trigger.getAttribute('data-gallery-title') || '';
+
+      var multiple = galleryItems.length > 1;
+      galleryPrev.hidden = !multiple;
+      galleryNext.hidden = !multiple;
+      galleryCounter.hidden = !multiple;
+
+      galleryBuildThumbs();
+      galleryShow(0);
+
+      galleryModal.hidden = false;
+      document.body.style.overflow = 'hidden';
+      galleryClose.focus();
+    }
+
+    function closeGallery() {
+      galleryModal.hidden = true;
+      document.body.style.overflow = '';
+      galleryImage.src = '';
+      galleryThumbs.innerHTML = '';
+      // Rendre le focus au bouton d'origine
+      if (galleryOpener) { galleryOpener.focus(); galleryOpener = null; }
+    }
+
+    document.querySelectorAll('[data-gallery-open]').forEach(function (trigger) {
+      trigger.addEventListener('click', function () { openGallery(trigger); });
+    });
+
+    galleryPrev.addEventListener('click', function () { galleryShow(galleryIndex - 1); });
+    galleryNext.addEventListener('click', function () { galleryShow(galleryIndex + 1); });
+    galleryClose.addEventListener('click', closeGallery);
+    if (galleryBackdrop) galleryBackdrop.addEventListener('click', closeGallery);
+
+    document.addEventListener('keydown', function (e) {
+      if (galleryModal.hidden) return;
+      if (e.key === 'Escape')     { closeGallery(); }
+      if (e.key === 'ArrowLeft')  { galleryShow(galleryIndex - 1); }
+      if (e.key === 'ArrowRight') { galleryShow(galleryIndex + 1); }
     });
   }
 

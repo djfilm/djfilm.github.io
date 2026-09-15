@@ -51,28 +51,59 @@ breadcrumbs:
       </div>
 
       <div class="service-block__media">
-        {% if service.images %}
-        <div class="service-carousel" role="img" aria-label="{{ service.thumbnail_alt }}">
-          {% for img in service.images %}
-          <img
-            src="{{ img | relative_url }}"
-            alt="{{ service.thumbnail_alt }}"
-            class="service-carousel__slide"
-            loading="eager"
-            decoding="async"
-          >
-          {% endfor %}
-        </div>
-        {% else %}
-        <img
-          src="{{ service.thumbnail | relative_url }}"
-          alt="{{ service.thumbnail_alt }}"
-          class="service-block__image"
-          loading="lazy"
-          decoding="async"
-          width="600"
-          height="450"
+        {%- comment -%}
+          Les images sont lues directement dans le dossier du service :
+          le fichier suffixé « _logo » sert de visuel unique sur la page,
+          les autres n'apparaissent que dans la galerie au clic.
+        {%- endcomment -%}
+        {%- assign folder = service.images_folder -%}
+        {%- assign media_files = site.static_files | where_exp: "f", "f.path contains folder" | sort: "name" -%}
+        {%- assign cover = '' -%}
+        {%- assign others_str = '' -%}
+        {%- for f in media_files -%}
+          {%- assign ext = f.extname | downcase -%}
+          {%- if ext == '.webp' or ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.avif' -%}
+            {%- assign file_url = f.path | relative_url -%}
+            {%- if f.basename contains '_logo' -%}
+              {%- assign cover = file_url -%}
+            {%- else -%}
+              {%- assign others_str = others_str | append: file_url | append: '|' -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- assign others = others_str | split: '|' -%}
+        {%- if cover != '' -%}
+          {%- assign cover_arr = cover | split: '|' -%}
+          {%- assign gallery = cover_arr | concat: others -%}
+        {%- else -%}
+          {%- assign gallery = others -%}
+          {%- assign cover = others | first -%}
+        {%- endif -%}
+
+        {% if cover and cover != '' %}
+        <button
+          type="button"
+          class="service-gallery"
+          data-gallery-open
+          data-gallery-title="{{ service.title | escape }}"
+          data-gallery-alt="{{ service.thumbnail_alt | escape }}"
+          data-gallery-images="{{ gallery | join: '|' | escape }}"
+          aria-label="Ouvrir la galerie photos — {{ service.title | escape }} ({{ gallery.size }} photo{% if gallery.size > 1 %}s{% endif %})"
         >
+          <img
+            src="{{ cover | escape }}"
+            alt="{{ service.thumbnail_alt }}"
+            class="service-gallery__cover"
+            loading="lazy"
+            decoding="async"
+            width="600"
+            height="450"
+          >
+          <span class="service-gallery__hint" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+            {{ gallery.size }} photo{% if gallery.size > 1 %}s{% endif %}
+          </span>
+        </button>
         {% endif %}
       </div>
       </div>

@@ -20,15 +20,12 @@
       "tagline": "Votre plus beau jour, raconté pour toujours",
       "description": "Le mariage est l'un des moments les plus intenses et précieux de votre vie. Je m'efface pour être un témoin discret et attentif, capturant les regards échangés, les rires spontanés, les larmes retenues — tout ce qui fait que votre journée est unique.",
       "features": [
-              "Rencontre préparatoire",
-
+        "Rencontre préparatoire",
         "Tournage le jour du mariage",
         "Montage & post-production",
-
         "Film principal cinématographique",
         "Clip court type teaser (en option)",
-        "Prise de son soignée",
-        "Livraison en 4K"
+        "Prise de son soignée"
       ],
       "process": [
         "Appel découverte",
@@ -38,34 +35,30 @@
         "Présentation du montage et retouches",
         "Livraison des fichiers définitifs"
       ],
-      "thumbnail": "/assets/images/services/mariage/mariage_1.webp",
+      "images_folder": "/assets/images/services/01-mariage/",
       "thumbnail_alt": "Film de mariage cinématographique par DJfilm Agen",
-      "images": [
-        "/assets/images/services/mariage/mariage_1.webp",
-        "/assets/images/services/mariage/mariage_2.webp",
-        "/assets/images/services/mariage/mariage_3.webp",
-        "/assets/images/services/mariage/mariage_4.webp",
-        "/assets/images/services/mariage/mariage_5.webp"
-      ],
       "cta": {
         "label": "Me contacter",
         "url": "/contact/?service=mariage"
       },
       "zone": "Agen, Lot-et-Garonne, Nouvelle-Aquitaine et France entière",
-      "keywords": ["vidéaste mariage Agen", "film mariage Lot-et-Garonne", "film mariage 47"]
+      "keywords": [
+        "vidéaste mariage Agen",
+        "film mariage Lot-et-Garonne",
+        "film mariage 47"
+      ]
     },
     {
       "id": "entreprise",
       "icon": "briefcase",
       "number": "02",
-      "title": "Film & Événements d'Entreprise",
+      "title": "Film d'Entreprise",
       "subtitle": "Institutionnel · Événementiel · Image de Marque",
       "tagline": "Votre identité, filmée avec précision",
       "description": "Un film d'entreprise bien réalisé est l'un des outils de communication les plus puissants. Il humanise votre marque, inspire confiance et génère de l'engagement. Je travaille avec vous pour créer un contenu qui reflète fidèlement vos valeurs et vos ambitions.",
       "features": [
-                "Brief & définition des objectifs",
+        "Brief & définition des objectifs",
         "Pré-production & repérage",
-
         "Film institutionnel",
         "Témoignages",
         "Présentation de produits ou de services",
@@ -80,80 +73,240 @@
         "Montage, étalonnage & post-production",
         "Validation et livraison"
       ],
-      "thumbnail": "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_1.webp",
+      "images_folder": "/assets/images/services/02-entreprise/",
       "thumbnail_alt": "Film et événements d'entreprise par DJfilm Agen",
-      "images": [
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_1.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_2.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_3.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_4.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_5.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_6.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_7.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_8.webp",
-        "/assets/images/services/film&evenement-entreprise/film&evenement-entreprise_9.webp"
-      ],
       "cta": {
         "label": "Me contacter",
         "url": "/contact/?service=entreprise"
       },
       "zone": "Agen, Lot-et-Garonne, Gironde, Toulouse et alentours",
-      "keywords": ["film entreprise Agen", "vidéo corporate Agen", "production audiovisuelle Agen"]
+      "keywords": [
+        "film entreprise Agen",
+        "vidéo corporate Agen",
+        "production audiovisuelle Agen"
+      ]
     },
     {
-  "id": "immobilier",
-  "icon": "home",
-  "number": "03",
-  "title": "Vidéo Immobilière",
-  "subtitle": "Maisons · Appartements · Biens d’exception",
-  "tagline": "Valoriser chaque espace",
-  "description": "Vidéos immobilières professionnelles pour mettre en valeur vos biens à vendre ou à louer. Plans fluides, lumière maîtrisée et narration visuelle pour déclencher l’intérêt rapidement.",
-  "features": [
-    "Échange sur le bien et l’objectif de diffusion",
-    "Préparation et repérage du lieu",
-    "Tournage sur site",
-    "Montage vidéo optimisé immobilier",
-    "Livraison des fichiers prêts à publier"
-    ],
-  "process": [
-    "Échange sur le bien et l’objectif de diffusion",
-    "Préparation et repérage du lieu",
-    "Tournage sur site",
-    "Montage vidéo optimisé immobilier",
-    "Livraison des fichiers prêts à publier"
-  ],
-  "thumbnail": "/assets/images/services/immobilier/immobilier_1.webp",
-  "thumbnail_alt": "Vidéo immobilière professionnelle par DJfilm Agen",
-  "images": [
-    "/assets/images/services/immobilier/immobilier_1.webp",
-    "/assets/images/services/immobilier/immobilier_2.webp",
-    "/assets/images/services/immobilier/immobilier_3.webp",
-    "/assets/images/services/immobilier/immobilier_4.webp",
-    "/assets/images/services/immobilier/immobilier_5.webp",
-    "/assets/images/services/immobilier/immobilier_6.webp",
-    "/assets/images/services/immobilier/immobilier_7.webp",
-    "/assets/images/services/immobilier/immobilier_8.webp",
-    "/assets/images/services/immobilier/immobilier_9.webp",
-    "/assets/images/services/immobilier/immobilier_10.webp",
-    "/assets/images/services/immobilier/immobilier_10.webp",
-    "/assets/images/services/immobilier/immobilier_12.webp",
-    "/assets/images/services/immobilier/immobilier_13.webp",
-    "/assets/images/services/immobilier/immobilier_14.webp",
-    "/assets/images/services/immobilier/immobilier_15.webp",
-    "/assets/images/services/immobilier/immobilier_16.webp"
-  ],
-  "cta": {
-    "label": "Me contacter",
-    "url": "/contact/?service=immobilier"
-  },
-  "zone": "Agen et toute la Nouvelle-Aquitaine",
-  "keywords": [
-    "vidéo immobilier Agen",
-    "film immobilier 47",
-    "valorisation bien immobilier Nouvelle-Aquitaine"
-  ]
-}
-    
+      "id": "evenement",
+      "icon": "calendar",
+      "number": "03",
+      "title": "Événement & Reportages",
+      "subtitle": "Festivals · Concerts · Reportages",
+      "tagline": "L'énergie de l'instant, capturée",
+      "description": "Festival, concert, inauguration, compétition ou reportage de terrain : je capte l'ambiance, les temps forts et les visages qui font la réussite de votre événement. Le montage restitue le rythme de la journée et vous laisse un film prêt à être diffusé et partagé.",
+      "features": [
+        "Échange sur l'événement et les objectifs",
+        "Repérage et préparation du tournage",
+        "Captation le jour J",
+        "Interviews et témoignages sur le vif",
+        "Prise de son dédiée",
+        "Montage dynamique & étalonnage",
+        "Formats courts pour le web (option)"
+      ],
+      "process": [
+        "Échange sur l'événement et les objectifs",
+        "Repérage et préparation du tournage",
+        "Captation le jour J",
+        "Montage & post-production",
+        "Présentation du montage et retouches",
+        "Livraison des fichiers définitifs"
+      ],
+      "images_folder": "/assets/images/services/03-evenements&reportages/",
+      "thumbnail_alt": "Captation d'événement et reportage vidéo par DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=evenement"
+      },
+      "zone": "Agen, Lot-et-Garonne, Gers, Gironde et tout le Sud-Ouest",
+      "keywords": [
+        "captation événement Agen",
+        "vidéaste festival Lot-et-Garonne",
+        "reportage vidéo 47"
+      ]
+    },
+    {
+      "id": "chateaux",
+      "icon": "castle",
+      "number": "04",
+      "title": "Châteaux & Domaines",
+      "subtitle": "Patrimoine · Vignobles · Lieux de réception",
+      "tagline": "Faire rayonner votre lieu",
+      "description": "Châteaux, domaines viticoles, gîtes et lieux de réception : un film qui révèle l'âme de votre propriété, ses espaces, son cadre et l'expérience que vous proposez. Un véritable outil de séduction pour vos futurs clients, vos partenaires et vos réservations en ligne.",
+      "features": [
+        "Échange sur le lieu et son positionnement",
+        "Repérage et choix des meilleures lumières",
+        "Plans au sol et vues aériennes",
+        "Mise en valeur des extérieurs et des espaces de réception",
+        "Film de présentation du domaine",
+        "Déclinaisons courtes pour vos réseaux (option)"
+      ],
+      "process": [
+        "Échange sur le lieu et son positionnement",
+        "Repérage et préparation du tournage",
+        "Tournage sur site",
+        "Montage, étalonnage & post-production",
+        "Présentation du montage et retouches",
+        "Livraison des fichiers définitifs"
+      ],
+      "images_folder": "/assets/images/services/04-chateaux&domaines/",
+      "thumbnail_alt": "Film de château et de domaine par DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=chateaux"
+      },
+      "zone": "Lot-et-Garonne, Gironde, Gers, Dordogne et Nouvelle-Aquitaine",
+      "keywords": [
+        "vidéo château Lot-et-Garonne",
+        "film domaine viticole Agen",
+        "vidéo lieu de réception 47"
+      ]
+    },
+    {
+      "id": "prive",
+      "icon": "cake",
+      "number": "05",
+      "title": "Baptêmes, Anniversaires & Événements privés",
+      "subtitle": "Famille · Fêtes · Moments de vie",
+      "tagline": "Vos souvenirs de famille, en images",
+      "description": "Un baptême, un anniversaire marquant, des retrouvailles de famille : ces moments passent vite et méritent mieux que quelques vidéos prises au téléphone. Je filme avec discrétion, sans jamais m'imposer, pour vous laisser un film que vous reverrez encore dans vingt ans.",
+      "features": [
+        "Échange sur le déroulé de la journée",
+        "Tournage discret sur place",
+        "Captation des temps forts et des discours",
+        "Prise de son soignée",
+        "Montage & post-production",
+        "Film souvenir + format court à partager (option)"
+      ],
+      "process": [
+        "Appel découverte",
+        "Échange sur le déroulé de la journée",
+        "Tournage le jour de l'événement",
+        "Montage & post-production",
+        "Présentation du montage et retouches",
+        "Livraison des fichiers définitifs"
+      ],
+      "images_folder": "/assets/images/services/05-bapteme&anniversaireeevenement_prive/",
+      "thumbnail_alt": "Vidéo de baptême, anniversaire et événement privé par DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=prive"
+      },
+      "zone": "Agen, Lot-et-Garonne et départements limitrophes",
+      "keywords": [
+        "vidéaste baptême Agen",
+        "vidéo anniversaire Lot-et-Garonne",
+        "film événement privé 47"
+      ]
+    },
+    {
+      "id": "reseaux-sociaux",
+      "icon": "share",
+      "number": "06",
+      "title": "Réseaux Sociaux",
+      "subtitle": "Formats verticaux · Reels · Shorts",
+      "tagline": "Des contenus pensés pour être vus",
+      "description": "Instagram, TikTok, YouTube Shorts, LinkedIn : chaque plateforme a ses codes et son rythme. Je conçois des contenus courts, verticaux et percutants, calés sur votre image de marque, pour alimenter vos réseaux avec régularité et capter l'attention dès les premières secondes.",
+      "features": [
+        "Définition de la ligne éditoriale",
+        "Tournage au format vertical 9:16",
+        "Montage rythmé & sous-titres intégrés",
+        "Habillage graphique à vos couleurs",
+        "Pack de plusieurs formats courts",
+        "Livraison optimisée par plateforme"
+      ],
+      "process": [
+        "Brief & définition de la ligne éditoriale",
+        "Écriture des formats et du plan de tournage",
+        "Tournage (demi-journée à 1 jour)",
+        "Montage, sous-titrage & habillage",
+        "Validation et retouches",
+        "Livraison des formats prêts à publier"
+      ],
+      "images_folder": "/assets/images/services/06-reseaux_sociaux/",
+      "thumbnail_alt": "Contenus vidéo pour les réseaux sociaux par DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=reseaux-sociaux"
+      },
+      "zone": "Agen, Lot-et-Garonne et Nouvelle-Aquitaine",
+      "keywords": [
+        "vidéo réseaux sociaux Agen",
+        "reels Instagram Lot-et-Garonne",
+        "vidéo TikTok entreprise 47"
+      ]
+    },
+    {
+      "id": "immobilier",
+      "icon": "home",
+      "number": "07",
+      "title": "Vidéo Immobilière",
+      "subtitle": "Maisons · Appartements · Biens d'exception",
+      "tagline": "Valoriser chaque espace",
+      "description": "Vidéos immobilières professionnelles pour mettre en valeur vos biens à vendre ou à louer. Plans fluides, lumière maîtrisée et narration visuelle pour déclencher l'intérêt rapidement.",
+      "features": [
+        "Échange sur le bien et l'objectif de diffusion",
+        "Préparation et repérage du lieu",
+        "Tournage sur site",
+        "Montage vidéo optimisé immobilier",
+        "Livraison des fichiers prêts à publier"
+      ],
+      "process": [
+        "Échange sur le bien et l'objectif de diffusion",
+        "Préparation et repérage du lieu",
+        "Tournage sur site",
+        "Montage vidéo optimisé immobilier",
+        "Livraison des fichiers prêts à publier"
+      ],
+      "images_folder": "/assets/images/services/07-immobilier/",
+      "thumbnail_alt": "Vidéo immobilière professionnelle par DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=immobilier"
+      },
+      "zone": "Agen et toute la Nouvelle-Aquitaine",
+      "keywords": [
+        "vidéo immobilier Agen",
+        "film immobilier 47",
+        "valorisation bien immobilier Nouvelle-Aquitaine"
+      ]
+    },
+    {
+      "id": "drone",
+      "icon": "drone",
+      "number": "08",
+      "title": "Drone",
+      "subtitle": "Vues aériennes · Captation 4K",
+      "tagline": "Prendre de la hauteur",
+      "description": "La vue aérienne change tout : elle situe un lieu, révèle son échelle et donne une dimension cinématographique à votre film. Prestation disponible seule ou en complément d'un tournage au sol, sur les sites où le vol est autorisé et après vérification des démarches nécessaires.",
+      "features": [
+        "Étude de faisabilité et vérification des autorisations de vol",
+        "Repérage du site",
+        "Captation aérienne en 4K",
+        "Plans d'ouverture, de situation et de mise en valeur",
+        "Montage & étalonnage",
+        "Livraison des rushes ou du film monté"
+      ],
+      "process": [
+        "Échange sur le projet et le lieu de tournage",
+        "Étude de faisabilité et autorisations",
+        "Repérage du site",
+        "Vol et captation aérienne",
+        "Montage, étalonnage & post-production",
+        "Livraison des fichiers définitifs"
+      ],
+      "images_folder": "/assets/images/services/08-drone/",
+      "thumbnail_alt": "Prises de vues aériennes par drone — DJfilm Agen",
+      "cta": {
+        "label": "Me contacter",
+        "url": "/contact/?service=drone"
+      },
+      "zone": "Agen, Lot-et-Garonne et Nouvelle-Aquitaine",
+      "keywords": [
+        "drone Agen",
+        "vue aérienne Lot-et-Garonne",
+        "captation drone 47"
+      ]
+    }
   ],
   "cta": {
     "title": "Parlons de votre projet",

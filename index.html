@@ -20,16 +20,8 @@ keywords:
      ============================================================ -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero__bg" aria-hidden="true">
-    <video
-      class="hero__bg-video"
-      autoplay
-      muted
-      loop
-      playsinline
-      preload="auto"
-    >
-      <source src="/assets/videos/Accueil%201.mp4" type="video/mp4">
-    </video>
+    <img class="hero__bg-img hero__bg-img--fade" src="/assets/images/acceuil/Accueil_1.webp" alt="" fetchpriority="high">
+    <img class="hero__bg-img hero__bg-img--fade" src="/assets/images/acceuil/Accueil_2.webp" alt="" loading="eager">
     <div class="hero__bg-overlay"></div>
     <div class="hero__grain"></div>
   </div>
@@ -74,18 +66,12 @@ keywords:
         <p class="intro-text" data-reveal data-reveal-delay="3">{{ d.intro.text_secondary }}</p>
       </div>
       <div class="intro-image-wrap" data-reveal data-reveal-delay="2">
-        <video
-          class="intro-image"
-          autoplay
-          muted
-          loop
-          playsinline
-          preload="auto"
-          disablepictureinpicture
-          controlslist="nodownload nofullscreen noremoteplayback"
+        <img
+          class="intro-image intro-image--wide"
+          src="/assets/images/acceuil/Accueil_miniature.webp"
+          alt="{{ d.intro.title }}"
+          loading="lazy"
         >
-          <source src="/assets/videos/Accueil%203.mp4" type="video/mp4">
-        </video>
         <div class="intro-image-frame" aria-hidden="true"></div>
       </div>
     </div>

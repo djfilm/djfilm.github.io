@@ -49,6 +49,33 @@
     </div>
   </div>
 
+  <!-- Modale galerie photos — services -->
+  <div class="gallery-modal" id="gallery-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-title" hidden>
+    <div class="gallery-modal__backdrop" id="gallery-modal-backdrop"></div>
+    <div class="gallery-modal__inner">
+      <div class="gallery-modal__bar">
+        <p class="gallery-modal__title" id="gallery-modal-title"></p>
+        <button class="gallery-modal__close" id="gallery-modal-close" type="button" aria-label="Fermer la galerie">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="gallery-modal__stage">
+        <button class="gallery-modal__nav gallery-modal__nav--prev" id="gallery-modal-prev" type="button" aria-label="Photo précédente">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <img class="gallery-modal__image" id="gallery-modal-image" src="" alt="">
+        <button class="gallery-modal__nav gallery-modal__nav--next" id="gallery-modal-next" type="button" aria-label="Photo suivante">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <p class="gallery-modal__counter" id="gallery-modal-counter" aria-live="polite"></p>
+
+      <div class="gallery-modal__thumbs" id="gallery-modal-thumbs"></div>
+    </div>
+  </div>
+
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
 </body>

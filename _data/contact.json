@@ -76,7 +76,12 @@
           { "value": "", "label": "Sélectionnez une prestation" },
           { "value": "mariage", "label": "Film de mariage" },
           { "value": "entreprise", "label": "Film d'entreprise" },
-          { "value": "evenement", "label": "Captation d'événement" },
+          { "value": "evenement", "label": "Événement & reportage" },
+          { "value": "chateaux", "label": "Château / Domaine" },
+          { "value": "prive", "label": "Baptême / Anniversaire / Événement privé" },
+          { "value": "reseaux-sociaux", "label": "Réseaux sociaux" },
+          { "value": "immobilier", "label": "Vidéo immobilière" },
+          { "value": "drone", "label": "Drone / Vues aériennes" },
           { "value": "publicite", "label": "Publicité & contenus" },
           { "value": "seminaire", "label": "Séminaire" },
           { "value": "autre", "label": "Autre projet" }
