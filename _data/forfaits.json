@@ -64,22 +64,47 @@
   "reassurance": {
     "label": "Pour chaque projet",
     "title": "Des prestations adaptées\nà chaque contexte",
-    "subtitle": "Que ce soit pour un mariage, un événement ou un projet d'entreprise, chaque formule s'adapte à votre réalité.",
+    "subtitle": "Mariage, entreprise, lieu, famille, réseaux ou vues aériennes : chaque formule s'adapte à votre réalité.",
     "items": [
       {
         "number": "01",
         "title": "Mariage",
-        "text": "Un regard discret et attentif pour capturer les émotions du plus beau jour."
+        "text": "Un regard discret pour capturer les émotions de votre journée et en faire un film qui traverse le temps."
       },
       {
         "number": "02",
-        "title": "Événement",
-        "text": "Conférences, soirées, concerts, cérémonies — une couverture à la hauteur de l'occasion."
+        "title": "Entreprise",
+        "text": "Film institutionnel, témoignages ou interviews : un contenu qui humanise votre marque."
       },
       {
         "number": "03",
-        "title": "Entreprise",
-        "text": "Films institutionnels, séminaires, interviews — une approche professionnelle pour votre image."
+        "title": "Événements & Reportages",
+        "text": "Festivals, concerts, inaugurations : l'ambiance et les temps forts, dans un film prêt à partager."
+      },
+      {
+        "number": "04",
+        "title": "Châteaux & Domaines",
+        "text": "Révéler l'âme de votre lieu, au sol comme dans les airs, pour séduire vos futurs clients."
+      },
+      {
+        "number": "05",
+        "title": "Événements privés",
+        "text": "Baptêmes, anniversaires, retrouvailles : un vrai film souvenir de vos moments en famille."
+      },
+      {
+        "number": "06",
+        "title": "Réseaux sociaux",
+        "text": "Reels, Shorts, TikTok ou LinkedIn : des formats verticaux courts et rythmés, à vos couleurs."
+      },
+      {
+        "number": "07",
+        "title": "Immobilier",
+        "text": "Plans fluides et lumière maîtrisée pour valoriser vos biens à vendre ou à louer."
+      },
+      {
+        "number": "08",
+        "title": "Drone",
+        "text": "Des vues aériennes en 4K, seules ou en complément d'un tournage au sol."
       }
     ]
   },

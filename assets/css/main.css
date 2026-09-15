@@ -2802,7 +2802,8 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
 .reassurance-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr; /* toutes les cartes à la même hauteur, sur les deux lignes */
   gap: var(--space-6);
   margin-top: clamp(var(--space-10), 5vw, var(--space-16));
 }
@@ -2898,7 +2899,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
   /* Forfaits */
   .pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
-  .reassurance-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
+  .reassurance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* Mobile (≤ 768px) */
@@ -2980,6 +2981,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
   /* Grilles */
   .services-preview-grid { grid-template-columns: 1fr; }
+  .reassurance-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
   .portfolio-featured-grid .portfolio-card:nth-child(n) { grid-column: 1 / -1; }
   .portfolio-featured-grid { grid-template-columns: 1fr; }
 
