@@ -95,7 +95,8 @@ keywords:
 
     <div class="services-preview-grid">
       {% for item in d.services_preview.items %}
-      <article class="service-preview-card" data-reveal data-reveal-delay="{{ forloop.index }}">
+      {% assign reveal_delay = forloop.index0 | modulo: 4 | plus: 1 %}
+      <article class="service-preview-card" data-reveal data-reveal-delay="{{ reveal_delay }}">
         <h3 class="service-preview-card__title">{{ item.title }}</h3>
         <p class="service-preview-card__desc">{{ item.description }}</p>
         <a href="{{ item.url | relative_url }}" class="service-preview-card__link">

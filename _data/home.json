@@ -45,22 +45,57 @@
         "id": "mariage",
         "icon": "rings",
         "title": "Mariage",
-        "description": "Témoin discret et attentif, je capture les regards échangés, les rires spontanés, les larmes retenues — tout ce qui fait que votre journée est unique.",
+        "description": "Témoin discret de votre journée, je capture les regards, les rires et les émotions pour un film cinématographique qui traverse le temps.",
         "url": "/services/#mariage"
       },
       {
         "id": "entreprise",
         "icon": "briefcase",
-        "title": "Film & Événements d'Entreprise",
-        "description": "Un film d'entreprise humanise votre marque, inspire confiance et génère de l'engagement. Je crée avec vous un contenu qui reflète fidèlement vos valeurs et vos ambitions.",
+        "title": "Film d'Entreprise",
+        "description": "Film institutionnel, témoignages, interviews ou présentation produit : un contenu qui humanise votre marque et reflète vos valeurs.",
         "url": "/services/#entreprise"
       },
       {
         "id": "evenement",
-        "icon": "camera",
-        "title": "Captation d'Événement",
-        "description": "Conférences professionnelles, galas, séminaires, remises de prix — je capture l'énergie et les moments clés de vos événements.",
+        "icon": "calendar",
+        "title": "Événements & Reportages",
+        "description": "Festivals, concerts, inaugurations ou reportages de terrain : je capte l'ambiance et les temps forts pour un film prêt à partager.",
         "url": "/services/#evenement"
+      },
+      {
+        "id": "chateaux",
+        "icon": "castle",
+        "title": "Châteaux & Domaines",
+        "description": "Un film qui révèle l'âme de votre lieu, ses espaces et son cadre, au sol comme dans les airs, pour séduire vos futurs clients.",
+        "url": "/services/#chateaux"
+      },
+      {
+        "id": "prive",
+        "icon": "cake",
+        "title": "Événements privés",
+        "description": "Baptêmes, anniversaires, retrouvailles de famille : un tournage discret pour garder un vrai film souvenir de ces moments précieux.",
+        "url": "/services/#prive"
+      },
+      {
+        "id": "reseaux-sociaux",
+        "icon": "share",
+        "title": "Réseaux Sociaux",
+        "description": "Reels, Shorts, TikTok ou LinkedIn : des formats verticaux courts et rythmés, à vos couleurs, pour capter l'attention dès les premières secondes.",
+        "url": "/services/#reseaux-sociaux"
+      },
+      {
+        "id": "immobilier",
+        "icon": "home",
+        "title": "Vidéo Immobilière",
+        "description": "Plans fluides et lumière maîtrisée pour mettre en valeur vos biens à vendre ou à louer et déclencher l'intérêt rapidement.",
+        "url": "/services/#immobilier"
+      },
+      {
+        "id": "drone",
+        "icon": "drone",
+        "title": "Drone",
+        "description": "Des vues aériennes en 4K pour situer un lieu et révéler son échelle, seules ou en complément d'un tournage au sol.",
+        "url": "/services/#drone"
       }
     ]
   },
