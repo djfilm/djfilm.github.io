@@ -69,42 +69,50 @@
       {
         "number": "01",
         "title": "Mariage",
-        "text": "Un regard discret pour capturer les émotions de votre journée et en faire un film qui traverse le temps."
+        "text": "Un regard discret pour capturer les émotions de votre journée et en faire un film qui traverse le temps.",
+        "url": "/services/#mariage"
       },
       {
         "number": "02",
         "title": "Entreprise",
-        "text": "Film institutionnel, témoignages ou interviews : un contenu qui humanise votre marque."
+        "text": "Film institutionnel, témoignages ou interviews : un contenu qui humanise votre marque.",
+        "url": "/services/#entreprise"
       },
       {
         "number": "03",
         "title": "Événements & Reportages",
-        "text": "Festivals, concerts, inaugurations : l'ambiance et les temps forts, dans un film prêt à partager."
+        "text": "Festivals, concerts, inaugurations : l'ambiance et les temps forts, dans un film prêt à partager.",
+        "url": "/services/#evenement"
       },
       {
         "number": "04",
         "title": "Châteaux & Domaines",
-        "text": "Révéler l'âme de votre lieu, au sol comme dans les airs, pour séduire vos futurs clients."
+        "text": "Révéler l'âme de votre lieu, au sol comme dans les airs, pour séduire vos futurs clients.",
+        "url": "/services/#chateaux"
       },
       {
         "number": "05",
         "title": "Événements privés",
-        "text": "Baptêmes, anniversaires, retrouvailles : un vrai film souvenir de vos moments en famille."
+        "text": "Baptêmes, anniversaires, retrouvailles : un vrai film souvenir de vos moments en famille.",
+        "url": "/services/#prive"
       },
       {
         "number": "06",
         "title": "Réseaux sociaux",
-        "text": "Reels, Shorts, TikTok ou LinkedIn : des formats verticaux courts et rythmés, à vos couleurs."
+        "text": "Reels, Shorts, TikTok ou LinkedIn : des formats verticaux courts et rythmés, à vos couleurs.",
+        "url": "/services/#reseaux-sociaux"
       },
       {
         "number": "07",
         "title": "Immobilier",
-        "text": "Plans fluides et lumière maîtrisée pour valoriser vos biens à vendre ou à louer."
+        "text": "Plans fluides et lumière maîtrisée pour valoriser vos biens à vendre ou à louer.",
+        "url": "/services/#immobilier"
       },
       {
         "number": "08",
         "title": "Drone",
-        "text": "Des vues aériennes en 4K, seules ou en complément d'un tournage au sol."
+        "text": "Des vues aériennes en 4K, seules ou en complément d'un tournage au sol.",
+        "url": "/services/#drone"
       }
     ]
   },
