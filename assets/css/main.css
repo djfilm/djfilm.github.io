@@ -2802,12 +2802,16 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
 .reassurance-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr; /* toutes les cartes à la même hauteur, sur les deux lignes */
   gap: var(--space-6);
   margin-top: clamp(var(--space-10), 5vw, var(--space-16));
 }
 
 .reassurance-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: var(--space-8);
   border-radius: var(--radius-md);
   background: rgba(255,255,255,.7);
@@ -2815,7 +2819,25 @@ a.contact-channel__value:hover { color: var(--c-gold); }
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+  transition: border-color var(--dur-base), transform var(--dur-base), box-shadow var(--dur-base);
 }
+.reassurance-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--c-gold-subtle) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity var(--dur-base);
+}
+.reassurance-item:hover {
+  border-color: var(--c-border-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(63,168,118,.14);
+}
+.reassurance-item:hover::before { opacity: 1; }
+.reassurance-item > * { position: relative; } /* contenu au-dessus du dégradé */
 
 .reassurance-item__number {
   font-family: var(--font-serif);
@@ -2836,10 +2858,26 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 }
 
 .reassurance-item__text {
+  flex-grow: 1; /* pousse le lien en bas de la carte */
   font-size: var(--text-sm);
   color: var(--c-text-muted);
   line-height: var(--leading-loose);
+  margin-bottom: var(--space-6);
 }
+
+.reassurance-item__link {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+  transition: gap var(--dur-base);
+}
+.reassurance-item:hover .reassurance-item__link { gap: var(--space-3); }
 
 /* =============================================================================
    21. ANIMATIONS (Intersection Observer)
@@ -2898,7 +2936,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
   /* Forfaits */
   .pricing-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
-  .reassurance-grid { grid-template-columns: 1fr; max-width: 520px; margin-inline: auto; }
+  .reassurance-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 /* Mobile (≤ 768px) */
@@ -2980,6 +3018,7 @@ a.contact-channel__value:hover { color: var(--c-gold); }
 
   /* Grilles */
   .services-preview-grid { grid-template-columns: 1fr; }
+  .reassurance-grid { grid-template-columns: 1fr; grid-auto-rows: auto; }
   .portfolio-featured-grid .portfolio-card:nth-child(n) { grid-column: 1 / -1; }
   .portfolio-featured-grid { grid-template-columns: 1fr; }
 

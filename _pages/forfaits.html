@@ -115,10 +115,15 @@ breadcrumbs:
 
     <div class="reassurance-grid">
       {% for item in d.reassurance.items %}
-      <div class="reassurance-item" data-reveal data-reveal-delay="{{ forloop.index }}">
+      {% assign reveal_delay = forloop.index0 | modulo: 4 | plus: 1 %}
+      <div class="reassurance-item" data-reveal data-reveal-delay="{{ reveal_delay }}">
         <div class="reassurance-item__number" aria-hidden="true">{{ item.number }}</div>
         <h3 class="reassurance-item__title">{{ item.title }}</h3>
         <p class="reassurance-item__text">{{ item.text }}</p>
+        <a href="{{ item.url | relative_url }}" class="reassurance-item__link">
+          En savoir plus
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </div>
       {% endfor %}
     </div>
