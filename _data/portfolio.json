@@ -19,6 +19,21 @@
     { "id": "clip",      "label": "Clip" }
   ],
   "projects": [
+    {
+      "id": "Apéro-Entrepreneurs-32-&-47",
+      "title": "Apéro Entrepreneurs 32 & 47",
+      "category": "evenement",
+      "category_label": "Événement",
+      "location": "Gers",
+      "thumbnail": "https://img.youtube.com/vi/_DQL29YKn7g/maxresdefault.jpg",
+      "thumbnail_alt": "Apéro Entrepreneurs 32 & 47",
+      "video_url": "https://www.youtube.com/embed/_DQL29YKn7g",
+      "video_type": "youtube",
+      "duration": "1:02",
+      "description": "Apéro Entrepreneurs 32 & 47",
+      "featured": true,
+      "tags": ["evenement", "cinématique", "Gers"]
+    },
    {
       "id": "The-New-Mirande-Country-&-Rock-Festival-2026",
       "title": "The New Mirande Country & Rock Festival 2026",
