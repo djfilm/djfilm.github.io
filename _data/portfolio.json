@@ -20,6 +20,21 @@
   ],
   "projects": [
     {
+      "id": "Re-mariage Fred-&-Esther",
+      "title": "Re-Mariage Fred & Esther",
+      "category": "mariage",
+      "category_label": "Mariage",
+      "location": "Hautes-Pyrénées",
+      "thumbnail": "https://img.youtube.com/vi/bkbRsyuvBPo/maxresdefault.jpg",
+      "thumbnail_alt": "Re-Mariage Fred & Esther",
+      "video_url": "https://www.youtube.com/embed/bkbRsyuvBPo",
+      "video_type": "youtube",
+      "duration": "3:28",
+      "description": "Teaser du mariage de A & F",
+      "featured": true,
+      "tags": ["mariage", "cinématique", "Hautes-Pyrénées"]
+    },
+    {
       "id": "Apéro-Entrepreneurs-32-&-47",
       "title": "Apéro Entrepreneurs 32 & 47",
       "category": "evenement",
