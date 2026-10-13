@@ -26,6 +26,11 @@
       "id": "about"
     },
     {
+      "label": "Partenaires",
+      "url": "/partenaires/",
+      "id": "partenaires"
+    },
+    {
       "label": "FAQ",
       "url": "/faq/",
       "id": "faq"
@@ -63,6 +68,10 @@
     {
       "label": "À propos",
       "url": "/a-propos/"
+    },
+    {
+      "label": "Partenaires",
+      "url": "/partenaires/"
     },
     {
       "label": "FAQ",

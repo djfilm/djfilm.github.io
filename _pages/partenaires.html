@@ -1,0 +1,211 @@
+---
+layout: page
+page_id: partenaires
+permalink: /partenaires/
+seo_title: "Partenaires — Photographe & Vidéaste Mariage à Agen | DJfilm"
+seo_description: "Découvrez les partenaires de DJfilm, vidéaste à Agen : photographes de mariage et prestataires de confiance en Lot-et-Garonne. Forfaits photo + vidéo réalisés ensemble."
+og_image: "/assets/images/partenaires/01-lstudio/collaboration.webp"
+keywords:
+  - photographe vidéaste mariage Agen
+  - forfait photo vidéo mariage Lot-et-Garonne
+  - partenaires mariage Agen
+  - photographe mariage 47
+  - L.studio photographe Agen
+breadcrumbs:
+  - name: "Partenaires"
+    url: "/partenaires/"
+---
+
+{% assign d = site.data.partenaires %}
+{% assign partners = d.partners | where_exp: "p", "p.visible != false" | sort: "order" %}
+{% assign partner_plans = site.data.forfaits.partenariats.plans %}
+
+<!-- ============================================================
+     Hero
+     ============================================================ -->
+<section class="page-hero" aria-labelledby="partenaires-hero-title">
+  <div class="page-hero__inner container">
+    <p class="page-hero__label" data-reveal>{{ d.hero.label }}</p>
+    <h1 class="page-hero__title" id="partenaires-hero-title" data-reveal data-reveal-delay="1">{{ d.hero.title }}</h1>
+    <p class="page-hero__subtitle" data-reveal data-reveal-delay="2">{{ d.hero.subtitle }}</p>
+
+    {% if partners.size > 1 %}
+    <!-- Sommaire : accès rapide à chaque partenaire -->
+    <nav class="partners-index" aria-label="{{ d.labels.index }}" data-reveal data-reveal-delay="3">
+      {% for p in partners %}
+      <a href="#{{ p.id }}" class="partners-index__link">
+        <span class="partners-index__num" aria-hidden="true">{% if p.order < 10 %}0{% endif %}{{ p.order }}</span>
+        {{ p.name }}
+      </a>
+      {% endfor %}
+    </nav>
+    {% endif %}
+  </div>
+  <div class="page-hero__bg" aria-hidden="true"></div>
+</section>
+
+<!-- ============================================================
+     Partenaires
+     ============================================================ -->
+<section class="section section-partners" aria-label="{{ d.labels.index }}">
+  <div class="container">
+
+    {% for p in partners %}
+    {% assign pres   = p.presentation %}
+    {% assign collab = p.collaboration %}
+    {% assign offer  = nil %}
+    {% if collab.forfait_id and collab.forfait_id != "" %}
+      {% assign offer = partner_plans | where: "id", collab.forfait_id | first %}
+    {% endif %}
+    {% assign num = p.order %}{% if p.order < 10 %}{% assign num = p.order | prepend: "0" %}{% endif %}
+
+    <article class="partner" id="{{ p.id }}" aria-labelledby="partner-{{ p.id }}-name">
+
+      <!-- En-tête partenaire -->
+      <header class="partner__header" data-reveal>
+        <span class="partner__number" aria-hidden="true">{{ num }}</span>
+        <h2 class="partner__name" id="partner-{{ p.id }}-name">{{ p.name }}</h2>
+      </header>
+
+      <div class="partner__grid">
+
+        <!-- ── Présentation du partenaire ── -->
+        <div class="partner__col" data-reveal data-reveal-delay="1">
+        <div class="partner-card">
+          <div class="partner-card__media">
+            <img
+              src="{{ pres.image | relative_url }}"
+              alt="{{ pres.image_alt | default: p.name }}"
+              class="partner-card__img"
+              style="object-position: {{ pres.image_position | default: '50% 50%' }};"
+              {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+              decoding="async"
+            >
+            <span class="partner-card__tag">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              {{ d.labels.presentation }}
+            </span>
+          </div>
+
+          <div class="partner-card__body">
+            <p class="partner-card__eyebrow">{{ p.category }}</p>
+            <h3 class="partner-card__title">{{ p.name }}</h3>
+
+            {% if pres.description and pres.description.size > 0 %}
+            <div class="partner-card__desc">
+              {% for para in pres.description %}
+              <p>{{ para }}</p>
+              {% endfor %}
+            </div>
+            {% endif %}
+
+            {% if pres.website.url %}
+            <div class="partner-card__footer">
+              <a
+                href="{{ pres.website.url }}"
+                class="partner-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="{{ pres.website.label }} (nouvel onglet)"
+              >
+                {{ pres.website.label }}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        </div>
+
+        <!-- Connecteur visuel "×" -->
+        <span class="partner__link-icon" aria-hidden="true">×</span>
+
+        <!-- ── Collaboration ── -->
+        <div class="partner__col" data-reveal data-reveal-delay="2">
+        <div class="partner-card partner-card--collab">
+          <div class="partner-card__media">
+            <img
+              src="{{ collab.image | relative_url }}"
+              alt="{{ collab.image_alt | default: collab.title }}"
+              class="partner-card__img"
+              style="object-position: {{ collab.image_position | default: '50% 50%' }};"
+              {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}
+              decoding="async"
+            >
+            <span class="partner-card__tag partner-card__tag--collab">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              {{ d.labels.collaboration }}
+            </span>
+          </div>
+
+          <div class="partner-card__body">
+            {% if collab.category %}<p class="partner-card__eyebrow">{{ collab.category }}</p>{% endif %}
+            <h3 class="partner-card__title">{{ collab.title }}</h3>
+
+            {% if collab.description and collab.description != "" %}
+            <div class="partner-card__desc">
+              <p>{{ collab.description }}</p>
+            </div>
+            {% endif %}
+
+            {% if offer %}
+            <!-- Aperçu du forfait commun (données issues de forfaits.json) -->
+            <div class="partner-offer-preview">
+              <div class="partner-offer-preview__head">
+                <p class="partner-offer-preview__name">
+                  <span>{{ d.labels.forfait_from }}</span>
+                  {{ offer.name }}
+                </p>
+                {% if offer.price %}
+                <p class="partner-offer-preview__price">
+                  {% if offer.price_from %}<span>{{ offer.price_from }}</span>{% endif %}
+                  {{ offer.price }}
+                </p>
+                {% endif %}
+              </div>
+              {% if offer.tagline %}<p class="partner-offer-preview__tagline">{{ offer.tagline }}</p>{% endif %}
+              <ul class="pricing-card__features partner-offer-preview__features">
+                {% for feature in offer.features limit: 4 %}
+                <li>{{ feature }}</li>
+                {% endfor %}
+              </ul>
+              {% assign more = offer.features.size | minus: 4 %}
+              {% if more > 0 %}
+              <p class="partner-offer-preview__more">+ {{ more }} {{ d.labels.forfait_more }}</p>
+              {% endif %}
+            </div>
+            {% endif %}
+
+            {% if collab.forfait.url %}
+            <div class="partner-card__footer">
+              <a href="{{ collab.forfait.url | relative_url }}" class="btn btn--gold btn--full">
+                {{ collab.forfait.label }}
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+            {% endif %}
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </article>
+    {% endfor %}
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA Final
+     ============================================================ -->
+<section class="cta-banner section" aria-labelledby="partenaires-cta-title">
+  <div class="cta-banner__inner container text-center">
+    <p class="section-label" data-reveal>{{ d.cta.label }}</p>
+    <h2 class="cta-banner__title" id="partenaires-cta-title" data-reveal data-reveal-delay="1">{{ d.cta.title }}</h2>
+    <p class="cta-banner__text" data-reveal data-reveal-delay="2">{{ d.cta.text }}</p>
+    <div class="cta-banner__actions" data-reveal data-reveal-delay="3">
+      <a href="{{ d.cta.cta_primary.url | relative_url }}" class="btn btn--gold btn--lg">{{ d.cta.cta_primary.label }}</a>
+      <a href="{{ d.cta.cta_secondary.url | relative_url }}" class="btn btn--ghost btn--lg">{{ d.cta.cta_secondary.label }}</a>
+    </div>
+  </div>
+</section>

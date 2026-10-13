@@ -101,6 +101,91 @@ breadcrumbs:
   </div>
 </section>
 
+{% if d.partenariats.plans and d.partenariats.plans.size > 0 %}
+<!-- ============================================================
+     Section Forfaits en partenariat (photo + vidéo)
+     ============================================================ -->
+<section class="section section--sm forfaits-partners" id="forfaits-partenariat" aria-labelledby="forfaits-partners-title">
+  <div class="container">
+
+    <div class="text-center" data-reveal>
+      <p class="section-label">{{ d.partenariats.label }}</p>
+      <h2 class="section-title" id="forfaits-partners-title">{{ d.partenariats.title }}</h2>
+      <p class="section-subtitle">{{ d.partenariats.subtitle }}</p>
+    </div>
+
+    {% for plan in d.partenariats.plans %}
+    <article class="partner-offer" id="forfait-{{ plan.id }}" data-reveal aria-label="Forfait {{ plan.name }} avec {{ plan.partner_name }}">
+
+      <div class="partner-offer__media">
+        <img
+          src="{{ plan.image | relative_url }}"
+          alt="{{ plan.image_alt | default: plan.name }}"
+          class="partner-offer__img"
+          loading="lazy"
+          decoding="async"
+        >
+        {% if plan.badge %}<span class="partner-card__tag partner-card__tag--collab">{{ plan.badge }}</span>{% endif %}
+      </div>
+
+      <div class="partner-offer__body">
+        <div class="partner-offer__main">
+        <div class="pricing-card__header">
+          <p class="partner-offer__partner">
+            En partenariat avec
+            <a href="{{ '/partenaires/' | relative_url }}#{{ plan.partner_id }}">{{ plan.partner_name }}</a>
+          </p>
+          <h3 class="pricing-card__name">{{ plan.name }}</h3>
+          <p class="pricing-card__price">
+            <span class="pricing-card__price-from">{{ plan.price_from }}</span>
+            {{ plan.price }}
+          </p>
+          {% if plan.duration %}<p class="partner-offer__duration">{{ plan.duration }}</p>{% endif %}
+          <p class="pricing-card__tagline">{{ plan.tagline }}</p>
+        </div>
+        <div class="partner-offer__actions">
+          <a
+            href="{{ plan.cta_url | relative_url }}"
+            class="btn btn--gold"
+            aria-label="Demander un devis pour le forfait {{ plan.name }}"
+          >{{ plan.cta_label }}</a>
+          {% if plan.partner_cta_url %}
+          <a
+            href="{{ plan.partner_cta_url }}"
+            class="btn btn--ghost"
+            target="_blank"
+            rel="noopener"
+            aria-label="{{ plan.partner_cta_label }} (nouvel onglet)"
+          >{{ plan.partner_cta_label }}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          {% endif %}
+        </div>
+        </div>
+
+        <div class="partner-offer__details">
+        <ul class="pricing-card__features partner-offer__features" aria-label="Ce qui est inclus dans le forfait {{ plan.name }}">
+          {% for feature in plan.features %}
+          <li>{{ feature }}</li>
+          {% endfor %}
+        </ul>
+
+        {% if plan.perfect_for %}
+        <p class="pricing-card__note">
+          <strong>Parfait pour&nbsp;:</strong>&nbsp;{{ plan.perfect_for }}
+        </p>
+        {% endif %}
+
+        </div>
+      </div>
+
+    </article>
+    {% endfor %}
+
+  </div>
+</section>
+{% endif %}
+
 <!-- ============================================================
      Section Réassurance
      ============================================================ -->

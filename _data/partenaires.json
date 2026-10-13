@@ -1,0 +1,70 @@
+{
+  "_guide": "Ajouter un partenaire : copier un bloc de 'partners', changer 'id' (sans espace ni accent, sert d'ancre /partenaires/#id), 'order' (1, 2, 3… = ordre d'affichage) et les textes. 'visible': false masque le partenaire sans supprimer ses données. Images : /assets/images/partenaires/NN-nom/. 'image_position' = cadrage de la photo (horizontal vertical, ex. '50% 20%'). Collaboration : 'description' peut rester vide ; 'forfait_id' renvoie à un forfait de forfaits.json > partenariats.plans (laisser vide si aucun).",
+
+  "hero": {
+    "label": "Partenaires",
+    "title": "Des partenaires\nde confiance",
+    "subtitle": "Photographes et prestataires du mariage à Agen et dans le Lot-et-Garonne : les professionnels avec qui je collabore pour vous offrir une expérience complète, en photo comme en vidéo."
+  },
+
+  "labels": {
+    "presentation": "Présentation",
+    "collaboration": "Collaboration",
+    "index": "Nos partenaires",
+    "forfait_from": "Formule",
+    "forfait_more": "prestations incluses"
+  },
+
+  "partners": [
+    {
+      "id": "l-studio",
+      "order": 1,
+      "visible": true,
+      "name": "L.studio",
+      "category": "Photographie",
+      "presentation": {
+        "image": "/assets/images/partenaires/01-lstudio/presentation.webp",
+        "image_alt": "Les deux photographes de L.studio posant en studio, appareils photo en main",
+        "image_position": "50% 22%",
+        "description": [
+          "Deux photographes, une amitié de 17 ans.",
+          "Nous formons un duo complice et complémentaire, avec cette capacité à se comprendre sans avoir à se parler.",
+          "Le jour de votre mariage, être deux nous permet d’être partout à la fois : deux regards, deux angles de vue, plus de moments capturés, et surtout tous ces petits instants que vous n’aurez peut-être même pas vus.",
+          "Pendant que l’une photographie les grands moments, l’autre saisit les émotions, les réactions et les détails en toute discrétion.",
+          "À deux nous vous assurons une couverture plus complète et des souvenirs encore plus riches."
+        ],
+        "website": {
+          "label": "Découvrir L.studio",
+          "url": "https://www.l-studio.fr/"
+        }
+      },
+      "collaboration": {
+        "title": "L.studio × DJfilm",
+        "category": "Photo & vidéo",
+        "image": "/assets/images/partenaires/01-lstudio/collaboration.webp",
+        "image_alt": "Les photographes de L.studio et Damien Joyeux, vidéaste DJfilm, réunis avec leurs appareils photo et leur caméra",
+        "image_position": "50% 35%",
+        "description": "",
+        "forfait_id": "emotion",
+        "forfait": {
+          "label": "Découvrir le forfait",
+          "url": "/forfaits/#forfait-emotion"
+        }
+      }
+    }
+  ],
+
+  "cta": {
+    "label": "Contact",
+    "title": "Un projet photo & vidéo ?",
+    "text": "Parlez-moi de votre événement : je vous oriente vers la formule et les partenaires les plus adaptés à vos envies.",
+    "cta_primary": {
+      "label": "Demander un devis",
+      "url": "/contact/?from=partenaires"
+    },
+    "cta_secondary": {
+      "label": "Voir les forfaits",
+      "url": "/forfaits/"
+    }
+  }
+}

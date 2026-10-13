@@ -59,6 +59,12 @@ Avec plus de 150 mariages filmés, 200 projets réalisés, une note moyenne de 5
 - Délai de livraison standard pour les mariages : 4 à 6 semaines après la date de l'événement.
 - Haute saison mariage : mai à septembre — réservation recommandée le plus tôt possible.
 
+## Partenaires
+
+- [Partenaires DJfilm](https://djfilm.fr/partenaires/) — Les professionnels du mariage avec qui DJfilm collabore en Lot-et-Garonne : présentation de chaque partenaire et des forfaits réalisés ensemble.
+- [L.studio — photographes de mariage](https://www.l-studio.fr/) — Duo de photographes partenaire de DJfilm. Ensemble, ils proposent le forfait photo + vidéo « Emotion » : 2 photographes et 1 vidéaste le jour J, film de mariage d'environ 10 minutes, à partir de 2 990 €.
+- [Forfait Emotion (photo + vidéo)](https://djfilm.fr/forfaits/#forfait-emotion) — Détail de la formule commune L.studio × DJfilm.
+
 ## FAQ et informations pratiques
 
 - [Questions fréquentes DJfilm](https://djfilm.fr/faq/) — Réponses complètes sur les délais, les formats de livraison, le drone, les droits musicaux, la discrétion, la politique de confidentialité et les conditions d'annulation.
@@ -81,6 +87,7 @@ Avec plus de 150 mariages filmés, 200 projets réalisés, une note moyenne de 5
 - [Accueil DJfilm](https://djfilm.fr/) — Présentation générale du vidéaste Damien Joyeux et de ses services de production vidéo professionnelle à Agen.
 - [Services vidéo professionnels](https://djfilm.fr/services/) — Description complète des offres : film de mariage, vidéo d'entreprise, film immobilier, captation événementielle et drone.
 - [Forfaits et tarifs mariage](https://djfilm.fr/forfaits/) — Formules disponibles pour les mariages et information sur les devis personnalisés pour entreprises et immobilier.
+- [Partenaires](https://djfilm.fr/partenaires/) — Photographes et prestataires partenaires, avec les forfaits photo + vidéo proposés en commun.
 - [Portfolio de réalisations](https://djfilm.fr/portfolio/) — Exemples concrets de films réalisés pour visualiser le style cinématographique et la qualité des productions DJfilm.
 - [Contact et demande de devis](https://djfilm.fr/contact/) — Formulaire de devis, numéro de téléphone, email et localisation géographique pour initier un projet.
 
@@ -95,5 +102,5 @@ Avec plus de 150 mariages filmés, 200 projets réalisés, une note moyenne de 5
 
 ---
 
-Last-Updated: 2026-05-05
+Last-Updated: 2026-10-13
 SIRET: 103 746 053 00018 — Code APE: 5911B (Production de films institutionnels et publicitaires)

@@ -208,6 +208,21 @@
   "inLanguage": "fr-FR"
 }
 </script>
+{% elsif page.page_id == 'partenaires' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/partenaires/#webpage",
+  "url": "{{ site.url }}/partenaires/",
+  "name": {{ page.seo_title | jsonify }},
+  "description": {{ page.seo_description | jsonify }},
+  "isPartOf": { "@id": "{{ site.url }}/#website" },
+  "about": { "@id": "{{ site.url }}/#business" },
+  "mainEntity": { "@id": "{{ site.url }}/partenaires/#liste" },
+  "inLanguage": "fr-FR"
+}
+</script>
 {% elsif page.page_id == 'forfaits' %}
 <script type="application/ld+json">
 {
@@ -334,6 +349,52 @@
 </script>
 {% endif %}
 
+<!-- Schema : ItemList des partenaires (page partenaires uniquement) -->
+{% if page.page_id == 'partenaires' %}
+{% assign partenaires_data = site.data.partenaires %}
+{% assign schema_partners = partenaires_data.partners | where_exp: "p", "p.visible != false" | sort: "order" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "@id": "{{ site.url }}/partenaires/#liste",
+  "name": "Partenaires de DJfilm — Vidéaste à Agen",
+  "numberOfItems": {{ schema_partners | size }},
+  "itemListElement": [{% for p in schema_partners %}{% unless forloop.first %},{% endunless %}
+    {% assign p_offer = site.data.forfaits.partenariats.plans | where: "id", p.collaboration.forfait_id | first %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "url": "{{ site.url }}/partenaires/#{{ p.id }}",
+      "item": {
+        "@type": "Organization",
+        "@id": "{{ site.url }}/partenaires/#{{ p.id }}",
+        "name": {{ p.name | jsonify }},
+        "description": {{ p.presentation.description | join: " " | jsonify }},
+        "knowsAbout": {{ p.category | jsonify }},
+        "image": "{{ site.url }}{{ p.presentation.image }}",
+        "url": {{ p.presentation.website.url | jsonify }},
+        "sameAs": [{{ p.presentation.website.url | jsonify }}]{% if p_offer %},
+        "makesOffer": {
+          "@type": "Offer",
+          "name": {{ p_offer.name | append: " — " | append: p.collaboration.title | jsonify }},
+          "description": {{ p_offer.tagline | jsonify }},
+          "url": "{{ site.url }}/forfaits/#forfait-{{ p_offer.id }}",
+          "image": "{{ site.url }}{{ p.collaboration.image }}",
+          "priceCurrency": "EUR",
+          "price": "{{ p_offer.price | remove: '€' | remove: ' ' | remove: ' ' }}",
+          "offeredBy": [
+            { "@id": "{{ site.url }}/partenaires/#{{ p.id }}" },
+            { "@id": "{{ site.url }}/#business" }
+          ]
+        }{% endif %}
+      }
+    }{% endfor %}
+  ]
+}
+</script>
+{% endif %}
+
 <!-- Schema : Service data-driven (page services uniquement) -->
 {% if page.page_id == 'services' %}
 {% assign services_data = site.data.services %}
@@ -385,7 +446,7 @@
       "@type": "Offer",
       "name": {{ plan.name | jsonify }},
       "description": {{ plan.tagline | jsonify }},
-      "url": "{{ site.url }}/forfaits/#{{ plan.id }}",
+      "url": "{{ site.url }}/forfaits/#forfait-{{ plan.id }}",
       "priceCurrency": "EUR",
       "price": "{{ plan.price | remove: ' €' | remove: ' ' }}",
       "priceSpecification": {
@@ -404,6 +465,29 @@
         "name": {{ plan.name | jsonify }},
         "description": {{ plan.tagline | jsonify }},
         "provider": { "@id": "{{ site.url }}/#business" }
+      }
+    }{% endfor %}{% for plan in forfaits_data.partenariats.plans %},
+    {
+      "@type": "Offer",
+      "name": {{ plan.name | append: " — Photo & vidéo avec " | append: plan.partner_name | jsonify }},
+      "description": {{ plan.tagline | jsonify }},
+      "url": "{{ site.url }}/forfaits/#forfait-{{ plan.id }}",
+      "image": "{{ site.url }}{{ plan.image }}",
+      "priceCurrency": "EUR",
+      "price": "{{ plan.price | remove: '€' | remove: ' ' | remove: ' ' }}",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@id": "{{ site.url }}/#business"
+      },
+      "itemOffered": {
+        "@type": "Service",
+        "name": {{ plan.name | jsonify }},
+        "serviceType": "Photographie et vidéo de mariage",
+        "description": {{ plan.features | join: " · " | jsonify }},
+        "provider": [
+          { "@id": "{{ site.url }}/#business" },
+          { "@type": "Organization", "name": {{ plan.partner_name | jsonify }}, "url": {{ plan.partner_cta_url | jsonify }} }
+        ]
       }
     }{% endfor %}
   ]

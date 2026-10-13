@@ -61,6 +61,46 @@
       }
     ]
   },
+  "partenariats": {
+    "label": "En partenariat",
+    "title": "Forfaits photo & vidéo",
+    "subtitle": "Des formules complètes imaginées avec mes photographes partenaires : une seule équipe le jour J, vos photos et votre film de mariage.",
+    "plans": [
+      {
+        "id": "emotion",
+        "partner_id": "l-studio",
+        "partner_name": "L.studio",
+        "name": "Emotion",
+        "badge": "Photo + Vidéo",
+        "image": "/assets/images/partenaires/01-lstudio/collaboration.webp",
+        "image_alt": "L'équipe L.studio et DJfilm : deux photographes et un vidéaste pour votre mariage",
+        "price_from": "À partir de",
+        "price": "2 990 €",
+        "duration": "Environ 10 h de présence",
+        "tagline": "La formule photo et vidéo réalisée avec L.studio : deux photographes et un vidéaste pour raconter votre mariage, des préparatifs au vin d'honneur.",
+        "features": [
+          "Rdv de préparation",
+          "2 Photographes + 1 Vidéaste le jour J",
+          "Les préparatifs des mariés et leur découverte : \"The First Look\"",
+          "Reportage photo et vidéo durant la/les cérémonie(s)",
+          "Captation photo et vidéo des moments forts jusqu'au vin d'honneur",
+          "Photos de couple",
+          "Photos de groupes",
+          "Post traitement des contenus",
+          "Nombre de photos HD illimité",
+          "Galerie privée en ligne pour vous et vos invités",
+          "Film de mariage d'environ 10 minutes",
+          "Coffret souvenir",
+          "Shooting photo couple avant mariage OFFERT"
+        ],
+        "perfect_for": "les couples qui veulent leurs photos et leur film de mariage, avec une équipe unique et complice.",
+        "cta_label": "Demander un devis",
+        "cta_url": "/contact/?service=mariage&forfait=emotion",
+        "partner_cta_label": "Voir l'offre chez L.studio",
+        "partner_cta_url": "https://www.l-studio.fr/photographe-mariage-agen-47"
+      }
+    ]
+  },
   "reassurance": {
     "label": "Pour chaque projet",
     "title": "Des prestations adaptées\nà chaque contexte",
