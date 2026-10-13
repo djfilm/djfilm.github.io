@@ -72,11 +72,15 @@
         "partner_name": "L.studio",
         "name": "Emotion",
         "badge": "Photo + Vidéo",
+        "eyebrow": "Formule mariage",
         "image": "/assets/images/partenaires/01-lstudio/collaboration.webp",
         "image_alt": "L'équipe L.studio et DJfilm : deux photographes et un vidéaste pour votre mariage",
         "price_from": "À partir de",
         "price": "2 990 €",
-        "duration": "Environ 10 h de présence",
+        "highlights": [
+          { "label": "Présence", "value": "≈ 10 h" },
+          { "label": "Film", "value": "≈ 10 min" }
+        ],
         "tagline": "La formule photo et vidéo réalisée avec L.studio : deux photographes et un vidéaste pour raconter votre mariage, des préparatifs au vin d'honneur.",
         "features": [
           "Rdv de préparation",

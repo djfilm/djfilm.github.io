@@ -115,7 +115,7 @@ breadcrumbs:
     </div>
 
     {% for plan in d.partenariats.plans %}
-    <article class="partner-offer" id="forfait-{{ plan.id }}" data-reveal aria-label="Forfait {{ plan.name }} avec {{ plan.partner_name }}">
+    <article class="partner-offer" id="forfait-{{ plan.id }}" data-reveal aria-labelledby="forfait-{{ plan.id }}-name">
 
       <div class="partner-offer__media">
         <img
@@ -129,56 +129,83 @@ breadcrumbs:
       </div>
 
       <div class="partner-offer__body">
+
+        <!-- Colonne gauche : identité, prix, actions -->
         <div class="partner-offer__main">
-        <div class="pricing-card__header">
-          <p class="partner-offer__partner">
-            En partenariat avec
-            <a href="{{ '/partenaires/' | relative_url }}#{{ plan.partner_id }}">{{ plan.partner_name }}</a>
-          </p>
-          <h3 class="pricing-card__name">{{ plan.name }}</h3>
-          <p class="pricing-card__price">
-            <span class="pricing-card__price-from">{{ plan.price_from }}</span>
-            {{ plan.price }}
-          </p>
-          {% if plan.duration %}<p class="partner-offer__duration">{{ plan.duration }}</p>{% endif %}
-          <p class="pricing-card__tagline">{{ plan.tagline }}</p>
-        </div>
-        <div class="partner-offer__actions">
-          <a
-            href="{{ plan.cta_url | relative_url }}"
-            class="btn btn--gold"
-            aria-label="Demander un devis pour le forfait {{ plan.name }}"
-          >{{ plan.cta_label }}</a>
-          {% if plan.partner_cta_url %}
-          <a
-            href="{{ plan.partner_cta_url }}"
-            class="btn btn--ghost"
-            target="_blank"
-            rel="noopener"
-            aria-label="{{ plan.partner_cta_label }} (nouvel onglet)"
-          >{{ plan.partner_cta_label }}
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+
+          <a href="{{ '/partenaires/' | relative_url }}#{{ plan.partner_id }}" class="partner-offer__chip">
+            <span class="partner-offer__chip-avatar" aria-hidden="true">{{ plan.partner_name | slice: 0 }}</span>
+            <span>En partenariat avec <strong>{{ plan.partner_name }}</strong></span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          {% endif %}
-        </div>
+
+          <div>
+            {% if plan.eyebrow %}<p class="partner-offer__eyebrow">{{ plan.eyebrow }}</p>{% endif %}
+            <h3 class="partner-offer__name" id="forfait-{{ plan.id }}-name">{{ plan.name }}</h3>
+          </div>
+
+          <p class="partner-offer__tagline">{{ plan.tagline }}</p>
+
+          <dl class="partner-offer__stats">
+            {% if plan.price %}
+            <div class="partner-offer__stat partner-offer__stat--price">
+              <dt>{{ plan.price_from }}</dt>
+              <dd>{{ plan.price }}</dd>
+            </div>
+            {% endif %}
+            {% for h in plan.highlights %}
+            <div class="partner-offer__stat">
+              <dt>{{ h.label }}</dt>
+              <dd>{{ h.value }}</dd>
+            </div>
+            {% endfor %}
+          </dl>
+
+          <div class="partner-offer__actions">
+            <a
+              href="{{ plan.cta_url | relative_url }}"
+              class="btn btn--gold btn--full"
+              aria-label="Demander un devis pour le forfait {{ plan.name }}"
+            >{{ plan.cta_label }}</a>
+            {% if plan.partner_cta_url %}
+            <a
+              href="{{ plan.partner_cta_url }}"
+              class="partner-offer__ext"
+              target="_blank"
+              rel="noopener"
+              aria-label="{{ plan.partner_cta_label }} (nouvel onglet)"
+            >{{ plan.partner_cta_label }}
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            {% endif %}
+          </div>
+
         </div>
 
+        <!-- Colonne droite : contenu du forfait -->
         <div class="partner-offer__details">
-        <ul class="pricing-card__features partner-offer__features" aria-label="Ce qui est inclus dans le forfait {{ plan.name }}">
-          {% for feature in plan.features %}
-          <li>{{ feature }}</li>
-          {% endfor %}
-        </ul>
 
-        {% if plan.perfect_for %}
-        <p class="pricing-card__note">
-          <strong>Parfait pour&nbsp;:</strong>&nbsp;{{ plan.perfect_for }}
-        </p>
-        {% endif %}
+          <p class="partner-offer__details-title">
+            Ce qui est inclus
+            <span>{{ plan.features | size }} prestations</span>
+          </p>
+
+          <ul class="pricing-card__features partner-offer__features" aria-label="Ce qui est inclus dans le forfait {{ plan.name }}">
+            {% for feature in plan.features %}
+            <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+
+          {% if plan.perfect_for %}
+          <p class="partner-offer__perfect">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span><strong>Parfait pour</strong> {{ plan.perfect_for }}</span>
+          </p>
+          {% endif %}
 
         </div>
-      </div>
 
+      </div>
     </article>
     {% endfor %}
 
