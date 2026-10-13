@@ -17,14 +17,14 @@
 
   "partners": [
     {
-      "id": "l-studio",
+      "id": "L-Studio",
       "order": 1,
       "visible": true,
-      "name": "L.studio",
+      "name": "L.Studio",
       "category": "Photographie",
       "presentation": {
         "image": "/assets/images/partenaires/01-lstudio/presentation.webp",
-        "image_alt": "Les deux photographes de L.studio posant en studio, appareils photo en main",
+        "image_alt": "Les deux photographes de L.Studio posant en studio, appareils photo en main",
         "image_position": "50% 22%",
         "description": [
           "Deux photographes, une amitié de 17 ans.",
@@ -34,15 +34,15 @@
           "À deux nous vous assurons une couverture plus complète et des souvenirs encore plus riches."
         ],
         "website": {
-          "label": "Découvrir L.studio",
+          "label": "Découvrir L.Studio",
           "url": "https://www.l-studio.fr/"
         }
       },
       "collaboration": {
-        "title": "L.studio × DJfilm",
+        "title": "L.Studio × DJfilm",
         "category": "Photo & vidéo",
         "image": "/assets/images/partenaires/01-lstudio/collaboration.webp",
-        "image_alt": "Les photographes de L.studio et Damien Joyeux, vidéaste DJfilm, réunis avec leurs appareils photo et leur caméra",
+        "image_alt": "Les photographes de L.Studio et Damien Joyeux, vidéaste DJfilm, réunis avec leurs appareils photo et leur caméra",
         "image_position": "50% 35%",
         "description": "",
         "forfait_id": "emotion",
