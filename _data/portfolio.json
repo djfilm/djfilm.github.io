@@ -20,6 +20,21 @@
   ],
   "projects": [
     {
+      "id": "L-Studio-Photographie",
+      "title": "L.Studio Photographie",
+      "category": "publicite",
+      "category_label": "Publicité",
+      "location": "Lot-et-Garonne",
+      "thumbnail": "https://img.youtube.com/vi/WaawdQA5PKE/maxresdefault.jpg",
+      "thumbnail_alt": "Film promotionnel du studio de L.Studio Photographie - DJfilm",
+      "video_url": "https://www.youtube.com/embed/WaawdQA5PKE",
+      "video_type": "youtube",
+      "duration": "2:08",
+      "description": "Film promotionnel du studio de L.Studio Photographie.",
+      "featured": true,
+      "tags": ["publicite", "cinématique", "Lot-et-Garonne"]
+    },
+    {
       "id": "Re-mariage Fred-&-Esther",
       "title": "Re-Mariage Fred & Esther",
       "category": "mariage",
